@@ -1,0 +1,198 @@
+# frozen_string_literal: true
+
+module RelatonCen
+  # Scrapper.
+  module Scrapper
+    COMMITTEES = {
+      "TC 459" =>
+        "ECISS - European Committee for Iron and Steel Standardization",
+    }.freeze
+
+    class << self
+      # Parse page.
+      # @param hit [RelatonCen::Hit]
+      # @return [RelatonBib::BibliographicItem]
+      def parse_page(hit) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
+        doc = hit.hit_collection.agent.get hit.hit[:url]
+        RelatonIsoBib::IsoBibliographicItem.new(
+          fetched: Date.today.to_s,
+          type: "standard",
+          docid: fetch_docid(hit.hit[:code]),
+          language: ["en"],
+          script: ["Latn"],
+          title: fetch_titles(doc),
+          doctype: "international-standard",
+          docstatus: fetch_status(doc),
+          ics: fetch_ics(doc),
+          date: fetch_dates(doc),
+          # contributor: fetch_contributors(doc),
+          editorialgroup: fetch_editorialgroup(doc),
+          structuredidentifier: fetch_structuredid(hit.hit),
+          abstract: fetch_abstract(doc),
+          copyright: fetch_copyright(doc),
+          link: fetch_link(doc.uri.to_s),
+          relation: fetch_relations(doc),
+          place: ["London"],
+        )
+      end
+
+      private
+
+      # @param doc [Mechanize::Page]
+      # @return [Array<RelatonIsobib::Ics>]
+      def fetch_ics(doc)
+        doc.xpath("//tr[th[.='ICS']]/td/text()").map do |ics|
+          RelatonIsoBib::Ics.new ics.text.match(/[^\s]+/).to_s
+        end
+      end
+
+      # Fetch abstracts.
+      # @param doc [Mechanize::Page]
+      # @return [Array<Hash>]
+      def fetch_abstract(doc)
+        content = doc.at("//tr[th[.='Abstract/Scope']]/td")
+        [{ content: content.text, language: "en", script: "Latn" }]
+      end
+
+      # Fetch docid.
+      # @param ref [String]
+      # @return [Array<RelatonBib::DocumentIdentifier>]
+      def fetch_docid(ref)
+        [RelatonBib::DocumentIdentifier.new(type: "CEN", id: ref)]
+      end
+
+      # Fetch status.
+      # @param doc [Mechanize::Page]
+      # @return [RelatonBib::DocumentStatus, NilClass]
+      def fetch_status(doc)
+        s = doc.at("//tr[th[.='Status']]/td")
+        return unless s
+
+        RelatonBib::DocumentStatus.new(stage: s.text.strip)
+      end
+
+      # Fetch workgroup.
+      # @param doc [Mechanize::Page]
+      # @return [RelatonIsoBib::EditorialGroup]
+      def fetch_editorialgroup(doc) # rubocop:disable Metrics/MethodLength,Metrics/AbcSize
+        code = doc.at("//tr/td/h1/text()").text
+        title = doc.at("//tr/td/h1/span").text
+        %r{/(?<type>\w+)(?:\s(?<num>[^/]+))?$} =~ code
+        tc = []
+        COMMITTEES.each do |k, v|
+          next unless code.include? k
+
+          t, n = k.split " "
+          tc << RelatonIsoBib::IsoSubgroup.new(name: v, type: t, number: n)
+        end
+        sc = []
+        if tc.any?
+          sc << RelatonIsoBib::IsoSubgroup.new(name: title, type: type, number: num)
+        else
+          tc << RelatonIsoBib::IsoSubgroup.new(name: title, type: type, number: num)
+        end
+        RelatonIsoBib::EditorialGroup.new(technical_committee: tc,
+                                          subcommittee: sc)
+      end
+
+      # @param hit [RelatonCen::Hit]
+      # @return [RelatonIsoBib::StructuredIdentifier]
+      def fetch_structuredid(hit)
+        %r{(?<pnum>\d+)(?:-(?<part>\d+))?(?:-(?<subpart>\d+))?} =~ hit[:code]
+        RelatonIsoBib::StructuredIdentifier.new(
+          project_number: pnum, part: part, subpart: subpart, type: "CEN",
+        )
+      end
+
+      # Fetch relations.
+      # @param doc [Mechanize::Page]
+      # @return [Array<Hash>]
+      def fetch_relations(doc) # rubocop:disable Metrics/MethodLength,Metrics/AbcSize
+        doc.xpath(
+          "//div[@id='DASHBOARD_LISTRELATIONS']/table/tr[th[.!='Sales Points']]",
+        ).each_with_object([]) do |rt, a|
+          t = rt.at("th").text
+          type = case t
+                 when "Supersedes" then "obsoletes"
+                 when /Normative reference/ then "cites"
+                 else t.downcase
+                 end
+          rt.xpath("td/a").each do |r|
+            fref = RelatonBib::FormattedRef.new(content: r.text, language: "en",
+                                                script: "Latn")
+            link = fetch_link HitCollection::DOMAIN + r[:href]
+            bibitem = RelatonBib::BibliographicItem.new(
+              formattedref: fref, type: "standard", link: link,
+            )
+            a << { type: type, bibitem: bibitem }
+          end
+        end
+      end
+
+      # Fetch titles.
+      # @param doc [Mechanize::Page]
+      # @return [RelatonBib::TypedTitleStringCollection]
+      def fetch_titles(doc)
+        te = doc.at("//tr[th[.='Title']]/td").text.strip
+        RelatonBib::TypedTitleString.from_string te, "en", "Latn"
+      end
+
+      # Fetch dates
+      # @param hit [Mechanize::Page]
+      # @return [Array<Hash>]
+      def fetch_dates(doc) # rubocop:disable Metrics/CyclomaticComplexity,Metrics/MethodLength
+        doc.xpath("//div[@id='DASHBOARD_LISTIMPLEMENTATIONDATES']/table/tr")
+          .each_with_object([]) do |d, a|
+          on = d.at("td").text
+          next if on.empty?
+
+          t = d.at("th").text
+          type = case t
+                 when /DOR/ then "adapted"
+                 when /DAV/ then "issued"
+                 when /DOA/ then "announced"
+                 when /DOP/ then "published"
+                 when /DOW/ then "obsoleted"
+                 else t.downcase
+                 end
+          a << { type: type, on: on }
+        end
+      end
+
+      # Fetch contributors
+      # @param doc [Mechanize::Page]
+      # @return [Array<Hash>]
+      # def fetch_contributors(doc)
+      #   contrib = { role: [type: "publisher"] }
+      #   contrib[:entity] = owner_entity doc
+      #   [contrib]
+      # end
+
+      # Fetch links.
+      # @param url [String]
+      # @return [Array<Hash>]
+      def fetch_link(url)
+        [{ type: "src", content: url }]
+      end
+
+      # Fetch copyright.
+      # @param doc [Mechanize::Page]
+      # @return [Array<Hash>]
+      def fetch_copyright(doc)
+        date = doc.at("//tr[th[.='date of Availability (DAV)']]/td").text
+        owner = owner_entity
+        from = date.match(/^\d{4}/).to_s
+        [{ owner: [owner], from: from }]
+      end
+
+      # @return [Hash]
+      def owner_entity
+        {
+          abbreviation: "CEN",
+          name: "European Committee for Standardization",
+          url: "https://cen.eu",
+        }
+      end
+    end
+  end
+end

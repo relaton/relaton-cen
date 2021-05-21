@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in relaton_cenelec.gemspec
+# Specify your gem's dependencies in relaton_cen.gemspec
 gemspec
 
 gem "rake", "~> 13.0"

@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
-require "relaton_cenelec"
+require "rspec/matchers"
+require "equivalent-xml"
+
+Dir["./spec/support/**/*.rb"].sort.each { |f| require f }
+
+require "relaton_cen"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -12,4 +17,13 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+end
+
+def write_file(file, content)
+  File.write file, content, encoding: "UTF-8" unless File.exist? file
+end
+
+def read_xml(file)
+  File.read(file, encoding: "UTF-8")
+    .sub /(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s
 end
