@@ -44,5 +44,5 @@ jobs:
           bundler-cache: true
 
       - run: |
-        bundle lock --add-platform x86_64-linux
-        bundle exec rake
+          bundle lock --add-platform x86_64-linux
+          bundle exec rake
