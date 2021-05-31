@@ -26,13 +26,13 @@ module RelatonCen
     # @param hash [Hash]
     # @return [RelatonBib::BibliographicItem]
     def hash_to_bib(hash)
-      ::RelatonBib::BibliographicItem.from_hash hash
+      ::RelatonIsoBib::IsoBibliographicItem.from_hash hash
     end
 
     # Returns hash of XML grammar
     # @return [String]
     def grammar_hash
-      @grammar_hash ||= ::RelatonBib.grammar_hash
+      @grammar_hash ||= ::RelatonIsoBib.grammar_hash
     end
   end
 end
