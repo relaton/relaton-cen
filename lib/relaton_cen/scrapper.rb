@@ -82,14 +82,14 @@ module RelatonCen
         COMMITTEES.each do |k, v|
           next unless code.include? k
 
-          t, n = k.split " "
-          tc << RelatonIsoBib::IsoSubgroup.new(name: v, type: t, number: n)
+          t, n = k.split
+          tc << RelatonBib::WorkGroup.new(name: v, type: t, number: n)
         end
         sc = []
         if tc.any?
-          sc << RelatonIsoBib::IsoSubgroup.new(name: title, type: type, number: num)
+          sc << RelatonBib::WorkGroup.new(name: title, type: type, number: num)
         else
-          tc << RelatonIsoBib::IsoSubgroup.new(name: title, type: type, number: num)
+          tc << RelatonBib::WorkGroup.new(name: title, type: type, number: num)
         end
         RelatonIsoBib::EditorialGroup.new(technical_committee: tc,
                                           subcommittee: sc)
