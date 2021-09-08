@@ -1,9 +1,9 @@
 <bibdata type="standard">
-  <fetched>2021-05-21</fetched>
+  <fetched>2021-09-08</fetched>
   <title type="title-main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 7: Guidance for the assessment of conformity (ISO/TS 21003-7:2019)</title>
   <title type="main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings - Part 7: Guidance for the assessment of conformity (ISO/TS 21003-7:2019)</title>
-  <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT,FSP_ORG_ID:68120,6137&amp;cs=124CA2347A9843B3165EE35F066A30B7C</uri>
+  <uri type="src">https://standards.cencenelec.eu/dyn/www/f?p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:68120,6137&amp;cs=19764D9131733FD9E70037E7A6E6740B2</uri>
   <docidentifier type="CEN">CEN ISO/TS 21003-7:2019</docidentifier>
   <date type="adapted">
     <on>2019-03-28</on>
@@ -34,43 +34,43 @@ In conjunction with the other parts of ISO 21003 (see Foreword), this document i
   <relation type="obsoletes">
     <bibitem type="standard">
       <formattedref format="text/plain" language="en" script="Latn">CEN ISO/TS 21003-7:2008/A1:2010</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=CENWEB:110:0::::FSP_PROJECT:34670&amp;cs=1739483DB0A85EDABBC435CE39F54C548</uri>
+      <uri type="src">https://standards.cencenelec.eu/dyn/www/f?p=CEN:110:0::::FSP_PROJECT:34670&amp;cs=1A2C6FD54AF7868DA773FDE1777CC23E1</uri>
     </bibitem>
   </relation>
   <relation type="obsoletes">
     <bibitem type="standard">
       <formattedref format="text/plain" language="en" script="Latn">CEN ISO/TS 21003-7:2008</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=CENWEB:110:0::::FSP_PROJECT:29120&amp;cs=157CFB37153811CB6097F253DF9B57B89</uri>
+      <uri type="src">https://standards.cencenelec.eu/dyn/www/f?p=CEN:110:0::::FSP_PROJECT:29120&amp;cs=1A4463CB755B0D6DD28029B3277859569</uri>
     </bibitem>
   </relation>
   <relation type="cites">
     <bibitem type="standard">
       <formattedref format="text/plain" language="en" script="Latn">ISO 17456</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-17456,68120&amp;cs=1FD4205F9B0E21546A862E6AEB321BD3D</uri>
+      <uri type="src">https://standards.cencenelec.eu/dyn/www/f?p=205:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-17456,68120&amp;cs=13729385B02B1572F49C424FFF285ECBD</uri>
     </bibitem>
   </relation>
   <relation type="cites">
     <bibitem type="standard">
       <formattedref format="text/plain" language="en" script="Latn">ISO 21003-1</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-1,68120&amp;cs=1E3BAF63C2639CA9E5C4B5F6B7F300413</uri>
+      <uri type="src">https://standards.cencenelec.eu/dyn/www/f?p=205:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-1,68120&amp;cs=137F418FFA22FAE9A41F8F96378FCE170</uri>
     </bibitem>
   </relation>
   <relation type="cites">
     <bibitem type="standard">
       <formattedref format="text/plain" language="en" script="Latn">ISO 21003-2</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-2,68120&amp;cs=14788DF9FA188AC4B4ECBD949EB95F25C</uri>
+      <uri type="src">https://standards.cencenelec.eu/dyn/www/f?p=205:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-2,68120&amp;cs=1F27EE44AFD4D74C36F54500142D9F2F7</uri>
     </bibitem>
   </relation>
   <relation type="cites">
     <bibitem type="standard">
       <formattedref format="text/plain" language="en" script="Latn">ISO 21003-3</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-3,68120&amp;cs=1DF2256C557AAF0DDCF7D85765E85640B</uri>
+      <uri type="src">https://standards.cencenelec.eu/dyn/www/f?p=205:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-3,68120&amp;cs=1958EAF9DAB3945FF0C0B965BEB84AF4F</uri>
     </bibitem>
   </relation>
   <relation type="cites">
     <bibitem type="standard">
       <formattedref format="text/plain" language="en" script="Latn">ISO 21003-5</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-5,68120&amp;cs=196D7C9FE2A53D9185BE4E4A2DEE23636</uri>
+      <uri type="src">https://standards.cencenelec.eu/dyn/www/f?p=205:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-5,68120&amp;cs=12132713C99FE3ED69755CF5AD14BD1F2</uri>
     </bibitem>
   </relation>
   <place>London</place>

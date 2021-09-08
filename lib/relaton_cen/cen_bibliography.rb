@@ -26,20 +26,11 @@ module RelatonCen
       #   reference is required
       # @return [RelatonBib::BibliographicItem, nil]
       def get(code, year = nil, opts = {}) # rubocop:disable Metrics/CyclomaticComplexity,Metrics/MethodLength,Metrics/PerceivedComplexity
-        # if year.nil?
         code1, year1 = code.split ":"
-        # unless code1.nil?
         code = code1
         year ||= year1
-        # end
-        # end
 
-        ret = bib_get1(code, year, opts)
-        return nil if ret.nil?
-
-        # ret = ret.to_most_recent_reference unless year || opts[:keep_year]
-        # ret = ret.to_all_parts if opts[:all_parts]
-        ret
+        bib_get1(code, year, opts)
       end
 
       private

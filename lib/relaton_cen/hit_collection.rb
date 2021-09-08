@@ -5,7 +5,7 @@ require "relaton_cen/hit"
 module RelatonCen
   # Page of hit collection.
   class HitCollection < RelatonBib::HitCollection
-    DOMAIN = "https://standards.cen.eu/dyn/www/"
+    DOMAIN = "https://standards.cencenelec.eu/dyn/www/"
 
     # @return [Mechanize]
     attr_reader :agent
@@ -21,23 +21,25 @@ module RelatonCen
         return
       end
 
-      search_page = agent.get "#{DOMAIN}f?p=204:105:0:::::"
-      form = search_page.at "//form"
-      req_body = form.xpath("//input").map do |f|
-        next if f[:name].empty? || f[:name] == "f11"
+      search_page = agent.get "#{DOMAIN}f?p=205:105:0:::::"
+      form = search_page.at "//form[@id='wwvFlowForm']"
+      skip_inputs = %w[f11 essentialCookies]
+      req_body = form.xpath(".//input").map do |f|
+        next if f[:name].empty? || skip_inputs.include?(f[:name])
 
         val = case f[:value]
               when "LANGUAGE_LIST" then 0
               when "STAND_REF" then ref
               else
                 case f[:name]
-                when "p_request" then "S1-S2-S3-S4-S5-S6"
+                when "p_request" then "S1-S2-S3-S4-S5-S6-CEN-CLC-"
                 when "f10" then ""
                 else f[:value]
                 end
               end
         if f[:name] == "f10" then "f10=#{f[:value]}&f11=#{val}"
-        else "#{f[:name]}=#{val}"
+        else
+          "#{f[:name]}=#{val}"
         end
       end.compact.join("&")
       resp = agent.post form[:action], req_body

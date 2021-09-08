@@ -76,7 +76,7 @@ module RelatonCen
       # @return [RelatonIsoBib::EditorialGroup]
       def fetch_editorialgroup(doc) # rubocop:disable Metrics/MethodLength,Metrics/AbcSize
         code = doc.at("//tr/td/h1/text()").text
-        title = doc.at("//tr/td/h1/span").text
+        title = doc.at("//tr/td[3]/h1").text
         %r{/(?<type>\w+)(?:\s(?<num>[^/]+))?$} =~ code
         tc = []
         COMMITTEES.each do |k, v|
