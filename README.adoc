@@ -152,6 +152,16 @@ puts item.to_xml(bibdata: true)
 </bibdata>"
 ----
 
+=== Typed links
+
+Each CEN document has `src` type link.
+
+[source,ruby]
+----
+item.link
+=> [#<RelatonBib::TypedUri:0x00007f865cf9a328 @content=#<Addressable::URI:0xbea0 URI:https://standards.cencenelec.eu/dyn/www/f?p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:68120,6137&cs=19764D9131733FD9E70037E7A6E6740B2>, @type="src">]
+----
+
 === Get code, and year
 [source,ruby]
 ----
