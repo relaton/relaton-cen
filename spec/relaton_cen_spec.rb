@@ -34,6 +34,13 @@ RSpec.describe RelatonCen do
     end
   end
 
+  it "get EN" do
+    VCR.use_cassette "en_13306" do
+      bib = RelatonCen::CenBibliography.get "EN 13306"
+      expect(bib.docidentifier[0].id).to eq "EN 13306:2017"
+    end
+  end
+
   context "get document by year" do
     it "in code" do
       VCR.use_cassette "cen_iso_ts_21003_7" do

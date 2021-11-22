@@ -14,7 +14,7 @@ module RelatonCen
       # @param text [String]
       # @return [RelatonCen::HitCollection]
       def search(text, year = nil)
-        /^CEN\s(?<code>.+)/ =~ text
+        /^C?EN\s(?<code>.+)/ =~ text
         HitCollection.new code, year
       rescue Mechanize::ResponseCodeError => e
         raise RelatonBib::RequestError, e.message
@@ -58,7 +58,7 @@ module RelatonCen
       # @param code [String]
       # @return [RelatonCen::HitCollection]
       def search_filter(code) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/MethodLength,Metrics/PerceivedComplexity
-        %r{^CEN\s(?<code1>[^-:]+)(?:-(?<part1>\d+))?} =~ code
+        %r{^C?EN\s(?<code1>[^-:]+)(?:-(?<part1>\d+))?} =~ code
         warn "[relaton-cen] (\"#{code}\") fetching..."
         result = search(code)
         result.select do |i|

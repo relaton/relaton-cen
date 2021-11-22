@@ -2,10 +2,10 @@ require "relaton/processor"
 
 module RelatonCen
   class Processor < Relaton::Processor
-    def initialize
+    def initialize # rubocop:disable Lint/MissingSuper
       @short = :relaton_cen
       @prefix = "CEN"
-      @defaultprefix = %r{^CEN\s}
+      @defaultprefix = %r{^C?EN\s}
       @idtype = "CEN"
     end
 
