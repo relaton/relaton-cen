@@ -30,6 +30,7 @@ type: standard
 docid:
 - id: CEN ISO/TS 21003-7:2019
   type: CEN
+  primary: true
 date:
 - type: adapted
   value: '2019-03-28'

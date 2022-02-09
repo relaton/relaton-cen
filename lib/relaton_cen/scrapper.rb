@@ -58,7 +58,7 @@ module RelatonCen
       # @param ref [String]
       # @return [Array<RelatonBib::DocumentIdentifier>]
       def fetch_docid(ref)
-        [RelatonBib::DocumentIdentifier.new(type: "CEN", id: ref)]
+        [RelatonBib::DocumentIdentifier.new(type: "CEN", id: ref, primary: true)]
       end
 
       # Fetch status.

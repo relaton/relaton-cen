@@ -1,10 +1,10 @@
 <bibdata type="standard">
-  <fetched>2021-09-08</fetched>
+  <fetched>2022-02-01</fetched>
   <title type="title-main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 7: Guidance for the assessment of conformity (ISO/TS 21003-7:2019)</title>
   <title type="main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings - Part 7: Guidance for the assessment of conformity (ISO/TS 21003-7:2019)</title>
   <uri type="src">https://standards.cencenelec.eu/dyn/www/f?p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:68120,6137&amp;cs=19764D9131733FD9E70037E7A6E6740B2</uri>
-  <docidentifier type="CEN">CEN ISO/TS 21003-7:2019</docidentifier>
+  <docidentifier type="CEN" primary="true">CEN ISO/TS 21003-7:2019</docidentifier>
   <date type="adapted">
     <on>2019-03-28</on>
   </date>
