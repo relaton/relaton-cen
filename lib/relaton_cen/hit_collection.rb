@@ -29,10 +29,10 @@ module RelatonCen
 
         val = case f[:value]
               when "LANGUAGE_LIST" then 0
-              when "STAND_REF" then ref
+              when "STAND_REF" then CGI.escape(ref)
               else
                 case f[:name]
-                when "p_request" then "S1-S2-S3-S4-S5-S6-CEN-CLC-"
+                when "p_request" then "S1-S2-S3-S4-S5-S6-S7-CEN-CLC-"
                 when "f10" then ""
                 else f[:value]
                 end
@@ -44,9 +44,23 @@ module RelatonCen
       end.compact.join("&")
       resp = agent.post form[:action], req_body
       @array = hits resp
+      sort
     end
 
     private
+
+    def sort
+      @array.sort! do |a, b|
+        ap = CenBibliography.code_to_parts a.hit[:code]
+        bp = CenBibliography.code_to_parts b.hit[:code]
+        s = ap[:code] <=> bp[:code]
+        s = ap[:part].to_s <=> bp[:part].to_s if s.zero?
+        s = bp[:year].to_s <=> ap[:year].to_s if s.zero?
+        s = ap[:amd].to_s <=> bp[:amd].to_s if s.zero?
+        s = ap[:amy].to_s <=> bp[:amy].to_s if s.zero?
+        s
+      end
+    end
 
     # @param resp [Mechanize::Page]
     # @return [Array<RelatonCen::Hit>]

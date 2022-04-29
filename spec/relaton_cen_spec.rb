@@ -28,9 +28,10 @@ RSpec.describe RelatonCen do
 
   it "get document with subcommittee" do
     VCR.use_cassette "subcommittee" do
-      bib = RelatonCen::CenBibliography.get "CEN EN 10160:1999"
-      expect(bib.editorialgroup.subcommittee[0].name).to eq "Test methods for "\
-        "steel (other than chemical analysis)"
+      bib = RelatonCen::CenBibliography.get "EN 10160:1999"
+      expect(bib.editorialgroup.subcommittee[0].name).to eq(
+        "Test methods for steel (other than chemical analysis)",
+      )
     end
   end
 
@@ -38,6 +39,20 @@ RSpec.describe RelatonCen do
     VCR.use_cassette "en_13306" do
       bib = RelatonCen::CenBibliography.get "EN 13306"
       expect(bib.docidentifier[0].id).to eq "EN 13306:2017"
+    end
+  end
+
+  it "get amendment" do
+    VCR.use_cassette "en_285_2015_a1_2021" do
+      bib = RelatonCen::CenBibliography.get "EN 285:2015+A1"
+      expect(bib.docidentifier[0].id).to eq "EN 285:2015+A1:2021"
+    end
+  end
+
+  it "get lates without part & year" do
+    VCR.use_cassette "en_1325" do
+      bib = RelatonCen::CenBibliography.get "EN 1325"
+      expect(bib.docidentifier[0].id).to eq "EN 1325:2014"
     end
   end
 
@@ -89,7 +104,7 @@ RSpec.describe RelatonCen do
   end
 
   it "returns nil when referense is empty" do
-    bib = RelatonCen::CenBibliography.get "CEN"
+    bib = RelatonCen::CenBibliography.get ""
     expect(bib).to be_nil
   end
 end
