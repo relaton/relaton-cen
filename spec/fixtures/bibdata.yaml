@@ -57,8 +57,9 @@ docstatus:
 copyright:
 - owner:
   - name:
-    - European Committee for Standardization
-    abbreviation: CEN
+    - content: European Committee for Standardization
+    abbreviation:
+      content: CEN
     url: https://cen.eu
   from: '2019'
 relation:
