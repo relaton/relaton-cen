@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "relaton_cen/hit"
-
 module RelatonCen
   # Page of hit collection.
   class HitCollection < RelatonBib::HitCollection

@@ -11,10 +11,10 @@ module RelatonCen
     class << self
       # Parse page.
       # @param hit [RelatonCen::Hit]
-      # @return [RelatonBib::BibliographicItem]
+      # @return [RelatonIsoBib::IsoBibliographicItem]
       def parse_page(hit) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
         doc = hit.hit_collection.agent.get hit.hit[:url]
-        RelatonIsoBib::IsoBibliographicItem.new(
+        BibliographicItem.new(
           fetched: Date.today.to_s,
           type: "standard",
           docid: fetch_docid(hit.hit[:code]),

@@ -1,7 +1,16 @@
 # frozen_string_literal: true
 
 require "digest/md5"
+require "mechanize"
+require "nokogiri"
 require_relative "relaton_cen/version"
+require "relaton_iso_bib"
+require "relaton_cen/biblographic_item"
+require "relaton_cen/scrapper"
+require "relaton_cen/hit_collection"
+require "relaton_cen/hit"
+require "relaton_cen/xml_parser"
+require "relaton_cen/hash_converter"
 require "relaton_cen/cen_bibliography"
 
 module RelatonCen

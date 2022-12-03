@@ -32,6 +32,7 @@ Or install it yourself as:
 [source,ruby]
 ----
 require 'relaton_cen'
+=> true
 
 hit_collection = RelatonCen::CenBibliography.search("CEN ISO/TS 21003-7")
 => <RelatonCen::HitCollection:0x00000000017de0 @ref=ISO/TS 21003-7 @fetched=false>
@@ -44,112 +45,27 @@ item = hit_collection[0].fetch
 === XML serialization
 [source,ruby]
 ----
-puts item.to_xml
-"<bibitem id="CENISO/TS21003-7-2019" type="standard">
-  <fetched>2021-05-30</fetched>
-  <title type="title-main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings</title>
-  <title type="title-part" format="text/plain" language="en" script="Latn">Part 7: Guidance for the assessment of conformity (ISO/TS 21003-7:2019)</title>
-  <title type="main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings - Part 7: Guidance for the assessment of conformity (ISO/TS 21003-7:2019)</title>
-  <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT,FSP_ORG_ID:68120,6137&amp;cs=124CA2347A9843B3165EE35F066A30B7C</uri>
-  <docidentifier type="CEN">CEN ISO/TS 21003-7:2019</docidentifier>
-  <date type="adapted">
-    <on>2019-03-28</on>
-  </date>
-  <date type="issued">
-    <on>2019-05-29</on>
-  </date>
-  <date type="announced">
-    <on>2019-08-31</on>
-  </date>
-  <language>en</language>
-  <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">This document gives requirements and guidance for the assessment of conformity of compounds, products, and assemblies in accordance with the applicable part(s) of ISO 21003 intended to be included in the manufacturer's quality plan as part of the quality management system and for the establishment of certification procedures.
-In conjunction with the other parts of ISO 21003 (see Foreword), this document is applicable to multilayer piping systems intended to be used for hot and cold water installations within buildings for the conveyance of water, whether or not intended for human consumption (domestic systems) and for heating systems, under design pressures and temperatures appropriate to the class of application (see ISO 21003-1:2008, Table 1).</abstract>
-  <status>
-    <stage>Published</stage>
-  </status>
-  <copyright>
-    <from>2019</from>
-    <owner>
-      <organization>
-        <name>European Committee for Standardization</name>
-        <abbreviation>CEN</abbreviation>
-        <uri>https://cen.eu</uri>
-      </organization>
-    </owner>
-  </copyright>
-  <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain" language="en" script="Latn">CEN ISO/TS 21003-7:2008/A1:2010</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=CENWEB:110:0::::FSP_PROJECT:34670&amp;cs=1739483DB0A85EDABBC435CE39F54C548</uri>
-    </bibitem>
-  </relation>
-  <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain" language="en" script="Latn">CEN ISO/TS 21003-7:2008</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=CENWEB:110:0::::FSP_PROJECT:29120&amp;cs=157CFB37153811CB6097F253DF9B57B89</uri>
-    </bibitem>
-  </relation>
-  <relation type="cites">
-    <bibitem type="standard">
-      <formattedref format="text/plain" language="en" script="Latn">ISO 17456</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-17456,68120&amp;cs=1FD4205F9B0E21546A862E6AEB321BD3D</uri>
-    </bibitem>
-  </relation>
-  <relation type="cites">
-    <bibitem type="standard">
-      <formattedref format="text/plain" language="en" script="Latn">ISO 21003-1</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-1,68120&amp;cs=1E3BAF63C2639CA9E5C4B5F6B7F300413</uri>
-    </bibitem>
-  </relation>
-  <relation type="cites">
-    <bibitem type="standard">
-      <formattedref format="text/plain" language="en" script="Latn">ISO 21003-2</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-2,68120&amp;cs=14788DF9FA188AC4B4ECBD949EB95F25C</uri>
-    </bibitem>
-  </relation>
-  <relation type="cites">
-    <bibitem type="standard">
-      <formattedref format="text/plain" language="en" script="Latn">ISO 21003-3</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-3,68120&amp;cs=1DF2256C557AAF0DDCF7D85765E85640B</uri>
-    </bibitem>
-  </relation>
-  <relation type="cites">
-    <bibitem type="standard">
-      <formattedref format="text/plain" language="en" script="Latn">ISO 21003-5</formattedref>
-      <uri type="src">https://standards.cen.eu/dyn/www/f?p=204:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:ISO-SPACE-21003-5,68120&amp;cs=196D7C9FE2A53D9185BE4E4A2DEE23636</uri>
-    </bibitem>
-  </relation>
-  <place>London</place>
-</bibitem>"
+item.to_xml
+=> "<bibitem id="CENISO/TS21003-7-2019" type="standard" schema-version="v1.2.1">
+      <fetched>2022-12-03</fetched>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings</title>
+      ...
+    </bibitem>"
 ----
 
 With `bibdata: true` option XML output wrapped with `bibdata` element and `ext` element added.
 [source,ruby]
 ----
-puts item.to_xml(bibdata: true)
-"bibdata type="standard">
-  <fetched>2021-05-30</fetched>
-  <title type="title-main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings</title>
-  ...
-  <ext>
-    <doctype>international-standard</doctype>
-    <editorialgroup>
-      <technical-committee number="155" type="TC">Plastics piping systems and ducting systems</technical-committee>
-    </editorialgroup>
-    <ics>
-      <code>23.040.20</code>
-      <text>Plastics pipes</text>
-    </ics>
-    <ics>
-      <code>91.140.60</code>
-      <text>Water supply systems</text>
-    </ics>
-    <structuredidentifier type="CEN">
-      <project-number part="7">21003</project-number>
-    </structuredidentifier>
-  </ext>
-</bibdata>"
+item.to_xml bibdata: true
+=> "<bibdata type="standard" schema-version="v1.2.1">
+      <fetched>2022-12-03</fetched>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings</title>
+      ...
+      <ext schema-version="v1.0.1">
+        <doctype>international-standard</doctype>
+        ...
+      </ext>
+    </bibdata>"
 ----
 
 === Typed links
@@ -185,16 +101,16 @@ hash = YAML.load_file 'spec/fixtures/bibdata.yaml'
 => {"id"=>"CENISO/TS21003-7-2019",
 ...
 
-RelatonIsoBib::IsoBibliographicItem.from_hash hash
-=> #<RelatonIsoBib::IsoBibliographicItem:0x00007fb21485d450
+ RelatonCen::BibliographicItem.from_hash hash
+=> #<RelatonCen::BibliographicItem:0x00007f9d0118cb58
 ...
 ----
 
 === Create bibliographic item from XML
 [source,ruby]
 ----
-RelatonBsi::XMLParser.from_xml File.read("spec/fixtures/bibdata.xml", encoding: "UTF-8")
-=> #<RelatonBsi::BsiBibliographicItem:0x007feb14d50b68
+RelatonCen::XMLParser.from_xml File.read("spec/fixtures/bibdata.xml", encoding: "UTF-8")
+=> #<RelatonCen::BibliographicItem:0x00007f9cf12bc5b0
 ...
 ----
 

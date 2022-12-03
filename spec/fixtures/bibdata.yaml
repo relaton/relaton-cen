@@ -1,5 +1,6 @@
 ---
 id: CENISO/TS21003-7-2019
+schema-version: v1.2.1
 title:
 - type: title-main
   content: Multilayer piping systems for hot and cold water installations inside buildings
@@ -284,3 +285,5 @@ structuredidentifier:
   project_number: '21003'
   part: '7'
   type: CEN
+ext:
+  schema-version: v1.0.1

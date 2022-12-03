@@ -1,5 +1,5 @@
-<bibdata type="standard">
-  <fetched>2022-02-01</fetched>
+<bibdata type="standard" schema-version="v1.2.1">
+  <fetched>2022-11-25</fetched>
   <title type="title-main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 7: Guidance for the assessment of conformity (ISO/TS 21003-7:2019)</title>
   <title type="main" format="text/plain" language="en" script="Latn">Multilayer piping systems for hot and cold water installations inside buildings - Part 7: Guidance for the assessment of conformity (ISO/TS 21003-7:2019)</title>
@@ -74,7 +74,7 @@ In conjunction with the other parts of ISO 21003 (see Foreword), this document i
     </bibitem>
   </relation>
   <place>London</place>
-  <ext>
+  <ext schema-version="v1.0.1">
     <doctype>international-standard</doctype>
     <editorialgroup>
       <technical-committee number="155" type="TC">Plastics piping systems and ducting systems</technical-committee>

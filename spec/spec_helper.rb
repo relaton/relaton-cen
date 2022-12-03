@@ -2,6 +2,7 @@
 
 require "rspec/matchers"
 require "equivalent-xml"
+require "jing"
 
 Dir["./spec/support/**/*.rb"].sort.each { |f| require f }
 
@@ -14,6 +15,8 @@ RSpec.configure do |config|
   # Disable RSpec exposing methods globally on `Module` and `main`
   config.disable_monkey_patching!
 
+  config.expose_dsl_globally = true
+
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
@@ -25,5 +28,5 @@ end
 
 def read_xml(file)
   File.read(file, encoding: "UTF-8")
-    .sub /(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s
+    .sub(/(?<=<fetched>)\d{4}-\d{2}-\d{2}/, Date.today.to_s)
 end

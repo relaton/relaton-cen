@@ -1,5 +1,3 @@
-require "nokogiri"
-
 module RelatonCen
   class XMLParser < RelatonIsoBib::XMLParser
     class << self
@@ -19,10 +17,10 @@ module RelatonCen
       # end
 
       # @param item_hash [Hash]
-      # @return [RelatonBib::BibliographicItem]
-      # def bib_item(item_hash)
-      #   RelatonIsoBib::IsoBibliographicItem.new **item_hash
-      # end
+      # @return [RelatonCen::BibliographicItem]
+      def bib_item(item_hash)
+        BibliographicItem.new(**item_hash)
+      end
     end
   end
 end

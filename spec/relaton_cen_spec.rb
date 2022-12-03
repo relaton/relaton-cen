@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "jing"
-
 RSpec.describe RelatonCen do
   it "has a version number" do
     expect(RelatonCen::VERSION).not_to be nil
@@ -20,7 +18,7 @@ RSpec.describe RelatonCen do
       xml = bib.to_xml bibdata: true
       write_file file, xml
       expect(xml).to be_equivalent_to read_xml(file)
-      schema = Jing.new "spec/fixtures/isobib.rng"
+      schema = Jing.new "grammars/relaton-iso-compile.rng"
       errors = schema.validate file
       expect(errors).to eq []
     end

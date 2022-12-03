@@ -1,12 +1,5 @@
 # frozen_string_literal: true
 
-require "mechanize"
-require "relaton_iso_bib"
-require "relaton_cen/scrapper"
-require "relaton_cen/hit_collection"
-require "relaton_cen/hit"
-require "relaton_cen/xml_parser"
-
 module RelatonCen
   # Class methods for search Cenelec standards.
   class CenBibliography

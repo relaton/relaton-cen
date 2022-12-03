@@ -7,7 +7,7 @@ RSpec.describe RelatonCen::XMLParser do
 
   it "create bibitem from YAML" do
     hash = YAML.load_file "spec/fixtures/bibdata.yaml"
-    bib = RelatonIsoBib::IsoBibliographicItem.from_hash hash
+    bib = RelatonCen::BibliographicItem.from_hash hash
     expect(bib.to_hash).to eq hash
   end
 end

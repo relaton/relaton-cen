@@ -6,7 +6,7 @@ module RelatonCen
     attr_writer :fetch
 
     # Parse page.
-    # @return [RelatonBib::BibliographicItem]
+    # @return [IsoRelatonBib::IsoBibliographicItem]
     def fetch
       @fetch ||= Scrapper.parse_page self
     end
