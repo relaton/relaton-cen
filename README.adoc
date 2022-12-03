@@ -81,7 +81,7 @@ item.link
 === Get code, and year
 [source,ruby]
 ----
-elatonCen::CenBibliography.get "CEN ISO/TS 21003-7:2019"
+RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7:2019"
 [relaton-cen] ("CEN ISO/TS 21003-7") fetching...
 [relaton-cen] ("CEN ISO/TS 21003-7") found CEN ISO/TS 21003-7:2019
 => #<RelatonIsoBib::IsoBibliographicItem:0x00007fadcd596c58
