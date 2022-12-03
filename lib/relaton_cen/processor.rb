@@ -32,7 +32,7 @@ module RelatonCen
     # Returns hash of XML grammar
     # @return [String]
     def grammar_hash
-      @grammar_hash ||= ::RelatonIsoBib.grammar_hash
+      @grammar_hash ||= ::RelatonCen.grammar_hash
     end
   end
 end
