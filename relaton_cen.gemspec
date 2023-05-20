@@ -8,13 +8,13 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ribose Inc."]
   spec.email         = ["open.source@ribose.com"]
 
-  spec.summary       = "RelatonCen: retrieve Cenelec Standards for "\
+  spec.summary       = "RelatonCen: retrieve Cenelec Standards for " \
                        "bibliographic use using the IsoBibliographicItem model"
-  spec.description   = "RelatonCen: retrieve Cenelec Standards for "\
+  spec.description   = "RelatonCen: retrieve Cenelec Standards for " \
                        "bibliographic use using the IsoBibliographicItem model"
   spec.homepage      = "https://github.com/metanorma/relaton-cen"
   spec.license       = "BSD-2-Clause"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.5.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
   # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
@@ -31,17 +31,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "equivalent-xml", "~> 0.6"
-  spec.add_development_dependency "pry-byebug"
-  spec.add_development_dependency "rubocop", "~> 1.17.0"
-  spec.add_development_dependency "rubocop-performance", "~> 1.11.0"
-  spec.add_development_dependency "rubocop-rails", "~> 2.10.0"
-  spec.add_development_dependency "ruby-jing"
-  spec.add_development_dependency "simplecov"
-  spec.add_development_dependency "vcr", "~> 5.0.0"
-  spec.add_development_dependency "webmock"
-
-  spec.add_dependency "mechanize"
+  spec.add_dependency "mechanize", "~> 2.8.0"
   spec.add_dependency "relaton-iso-bib", "~> 1.14.0"
 
   # For more information and examples about making a new gem, checkout our
