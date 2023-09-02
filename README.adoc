@@ -10,7 +10,7 @@ RelatonCen is a Ruby gem that implements the https://github.com/metanorma/metano
 
 == Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's `Gemfile`:
 
 [source,ruby]
 ----
@@ -19,11 +19,17 @@ gem 'relaton-cen'
 
 And then execute:
 
-    $ bundle install
+[source,sh]
+----
+$ bundle install
+----
 
 Or install it yourself as:
 
-    $ gem install relaton-cen
+[source,sh]
+----
+$ gem install relaton-cen
+----
 
 == Usage
 
@@ -42,7 +48,22 @@ item = hit_collection[0].fetch
  ...
 ----
 
+[source,ruby]
+----
+> RelatonCen::CenBibliography.get "CEN/CLC Guide 6"
+[relaton-cen] ("CEN/CLC Guide 6") fetching...
+[isoics] code   not found in ICS list
+[relaton-cen] ("CEN/CLC Guide 6") found CEN/CLC Guide 6:2014
+=>
+#<RelatonCen::BibliographicItem:0x000000011371cb90
+ @abstract=
+  [#<RelatonBib::FormattedString:0x000000011371c5f0
+    @content=
+     "ISO/IEC Guide 71:2014 provides guidance to standards..."
+----
+
 === XML serialization
+
 [source,ruby]
 ----
 item.to_xml
@@ -53,7 +74,9 @@ item.to_xml
     </bibitem>"
 ----
 
-With `bibdata: true` option XML output wrapped with `bibdata` element and `ext` element added.
+With `bibdata: true` option XML output wrapped with `bibdata` element and `ext`
+element added.
+
 [source,ruby]
 ----
 item.to_xml bibdata: true
@@ -79,6 +102,7 @@ item.link
 ----
 
 === Get code, and year
+
 [source,ruby]
 ----
 RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7:2019"
@@ -95,6 +119,7 @@ RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7", "2019"
 ----
 
 === Create bibliographic item form YAML
+
 [source,ruby]
 ----
 hash = YAML.load_file 'spec/fixtures/bibdata.yaml'
@@ -107,12 +132,14 @@ hash = YAML.load_file 'spec/fixtures/bibdata.yaml'
 ----
 
 === Create bibliographic item from XML
+
 [source,ruby]
 ----
 RelatonCen::XMLParser.from_xml File.read("spec/fixtures/bibdata.xml", encoding: "UTF-8")
 => #<RelatonCen::BibliographicItem:0x00007f9cf12bc5b0
 ...
 ----
+
 
 == Development
 
