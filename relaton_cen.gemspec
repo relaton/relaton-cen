@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "mechanize", "~> 2.8.0"
-  spec.add_dependency "relaton-iso-bib", "~> 1.14.0"
+  spec.add_dependency "relaton-iso-bib", "~> 1.16.0"
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
