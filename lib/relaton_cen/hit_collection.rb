@@ -22,7 +22,7 @@ module RelatonCen
       search_page = agent.get "#{DOMAIN}f?p=205:105:0:::::"
       form = search_page.at "//form[@id='wwvFlowForm']"
       skip_inputs = %w[f11 essentialCookies]
-      req_body = form.xpath(".//input").map do |f|
+      req_body = form.xpath(".//input").filter_map do |f|
         next if f[:name].empty? || skip_inputs.include?(f[:name])
 
         val = case f[:value]
@@ -39,7 +39,7 @@ module RelatonCen
         else
           "#{f[:name]}=#{val}"
         end
-      end.compact.join("&")
+      end.join("&")
       resp = agent.post form[:action], req_body
       @array = hits resp
       sort
