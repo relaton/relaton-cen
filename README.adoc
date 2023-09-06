@@ -33,6 +33,8 @@ $ gem install relaton-cen
 
 == Usage
 
+For CENELEC standards, use references with the prefix `CEN/CLC`. For example, `CEN/CLC Guide 6`.
+
 === Search for a standard using keywords
 
 [source,ruby]
@@ -48,12 +50,14 @@ item = hit_collection[0].fetch
  ...
 ----
 
+=== Get a standard by its code
+
 [source,ruby]
 ----
 > RelatonCen::CenBibliography.get "CEN/CLC Guide 6"
-[relaton-cen] ("CEN/CLC Guide 6") fetching...
+[relaton-cen] (CEN/CLC Guide 6) fetching...
 [isoics] code   not found in ICS list
-[relaton-cen] ("CEN/CLC Guide 6") found CEN/CLC Guide 6:2014
+[relaton-cen] (CEN/CLC Guide 6) `found CEN/CLC Guide 6`
 =>
 #<RelatonCen::BibliographicItem:0x000000011371cb90
  @abstract=
@@ -106,14 +110,14 @@ item.link
 [source,ruby]
 ----
 RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7:2019"
-[relaton-cen] ("CEN ISO/TS 21003-7") fetching...
-[relaton-cen] ("CEN ISO/TS 21003-7") found CEN ISO/TS 21003-7:2019
+[relaton-cen] (CEN ISO/TS 21003-7) fetching...
+[relaton-cen] (CEN ISO/TS 21003-7) found CEN `ISO/TS 21003-7:2019`
 => #<RelatonIsoBib::IsoBibliographicItem:0x00007fadcd596c58
 ...
 
 RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7", "2019"
-[relaton-cen] ("CEN ISO/TS 21003-7") fetching...
-[relaton-cen] ("CEN ISO/TS 21003-7") found CEN ISO/TS 21003-7:2019
+[relaton-cen] (CEN ISO/TS 21003-7) fetching...
+[relaton-cen] (CEN ISO/TS 21003-7) found CEN `ISO/TS 21003-7:2019`
 => #<RelatonIsoBib::IsoBibliographicItem:0x00007fadcd5df9f8
 ...
 ----

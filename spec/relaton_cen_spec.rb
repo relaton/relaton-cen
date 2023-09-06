@@ -35,8 +35,10 @@ RSpec.describe RelatonCen do
 
   it "get EN" do
     VCR.use_cassette "en_13306" do
-      bib = RelatonCen::CenBibliography.get "EN 13306"
-      expect(bib.docidentifier[0].id).to eq "EN 13306:2017"
+      expect do
+        bib = RelatonCen::CenBibliography.get "EN 13306"
+        expect(bib.docidentifier[0].id).to eq "EN 13306"
+      end.to output(/found `EN 13306`/).to_stderr
     end
   end
 
@@ -50,7 +52,7 @@ RSpec.describe RelatonCen do
   it "get lates without part & year" do
     VCR.use_cassette "en_1325" do
       bib = RelatonCen::CenBibliography.get "EN 1325"
-      expect(bib.docidentifier[0].id).to eq "EN 1325:2014"
+      expect(bib.docidentifier[0].id).to eq "EN 1325"
     end
   end
 

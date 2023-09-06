@@ -101,8 +101,9 @@ module RelatonCen
         result = search_filter(code) || return
         ret = isobib_results_filter(result, year)
         if ret[:ret]
-          warn "[relaton-cen] (\"#{code}\") found #{ret[:ret].docidentifier.first&.id}"
-          ret[:ret]
+          bib = year ? ret[:ret] : ret[:ret].to_most_recent_reference
+          warn "[relaton-cen] (#{code}) found `#{bib.docidentifier.first&.id}`"
+          bib
         else
           fetch_ref_err(code, year, ret[:years])
         end
