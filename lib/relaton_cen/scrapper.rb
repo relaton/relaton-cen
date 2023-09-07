@@ -41,8 +41,11 @@ module RelatonCen
       # @param doc [Mechanize::Page]
       # @return [Array<RelatonIsobib::Ics>]
       def fetch_ics(doc)
-        doc.xpath("//tr[th[.='ICS']]/td/text()").map do |ics|
-          RelatonIsoBib::Ics.new ics.text.match(/[^\s]+/).to_s
+        doc.xpath("//tr[th[.='ICS']]/td/text()").filter_map do |ics|
+          ics_code = ics.text.match(/[^\s]+/).to_s.gsub("\u00A0", "")
+          next if ics_code.empty?
+
+          RelatonIsoBib::Ics.new ics_code
         end
       end
 
