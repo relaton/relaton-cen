@@ -52,18 +52,40 @@ item = hit_collection[0].fetch
 
 === Get a standard by its code
 
+Use `RelatonCen::CenBibliography.get(ref, year, options)` to get a standard by its code.
+
+- `ref` is the standard code, e.g. `CEN ISO/TS 21003-7`
+- `year` is the year of the standard, e.g. `2019` (optional)
+- `options` is a hash of options:
+  - `keep_year` - keep the year in ID if true (optional)
+
 [source,ruby]
 ----
+# With year in reference
+RelatonCen::CenBibliography.get "EN 10160:1999"
+[relaton-cen] (EN 10160:1999) fetching...
+[relaton-cen] (EN 10160:1999) found `EN 10160:1999`
+=> #<RelatonCen::BibliographicItem:0x0000000112d8b900
+...
+
+# With a year as a separate argument
+RelatonCen::CenBibliography.get "EN 10160", "1999"
+
+# To get the most recent version of a standard by its code use reference without year
 > RelatonCen::CenBibliography.get "CEN/CLC Guide 6"
 [relaton-cen] (CEN/CLC Guide 6) fetching...
-[isoics] code   not found in ICS list
-[relaton-cen] (CEN/CLC Guide 6) `found CEN/CLC Guide 6`
-=>
-#<RelatonCen::BibliographicItem:0x000000011371cb90
- @abstract=
-  [#<RelatonBib::FormattedString:0x000000011371c5f0
-    @content=
-     "ISO/IEC Guide 71:2014 provides guidance to standards..."
+[isoics] code   not found in ICS list
+[relaton-cen] (CEN/CLC Guide 6) found `CEN/CLC Guide 6`
+=> #<RelatonCen::BibliographicItem:0x0000000112d81680
+...
+
+# To keep the year in ID use `keep_year` option
+> RelatonCen::CenBibliography.get "CEN/CLC Guide 6", nil, keep_year: true
+[relaton-cen] (CEN/CLC Guide 6) fetching...
+[isoics] code   not found in ICS list
+[relaton-cen] (CEN/CLC Guide 6) found `CEN/CLC Guide 6:2014`
+=> #<RelatonCen::BibliographicItem:0x0000000112d8b400
+...
 ----
 
 === XML serialization

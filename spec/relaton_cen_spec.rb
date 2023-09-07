@@ -33,13 +33,18 @@ RSpec.describe RelatonCen do
     end
   end
 
-  it "get EN" do
-    VCR.use_cassette "en_13306" do
-      expect do
-        bib = RelatonCen::CenBibliography.get "EN 13306"
-        expect(bib.docidentifier[0].id).to eq "EN 13306"
-      end.to output(/found `EN 13306`/).to_stderr
-    end
+  it "get EN", vcr: "en_13306" do
+    expect do
+      bib = RelatonCen::CenBibliography.get "EN 13306"
+      expect(bib.docidentifier[0].id).to eq "EN 13306"
+    end.to output(/found `EN 13306`/).to_stderr
+  end
+
+  it "keeep year", vcr: "en_13306" do
+    expect do
+      bib = RelatonCen::CenBibliography.get "EN 13306", nil, keep_year: true
+      expect(bib.docidentifier[0].id).to eq "EN 13306:2017"
+    end.to output(/found `EN 13306:2017`/).to_stderr
   end
 
   it "get amendment" do
@@ -64,11 +69,11 @@ RSpec.describe RelatonCen do
       end
     end
 
-    it "in option" do
-      VCR.use_cassette "cen_iso_ts_21003_7" do
+    it "in option", vcr: "cen_iso_ts_21003_7" do
+      expect do
         bib = RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7", "2019"
         expect(bib.docidentifier[0].id).to eq "CEN ISO/TS 21003-7:2019"
-      end
+      end.to output(/\(CEN ISO\/TS 21003-7:2019\) found `CEN ISO\/TS 21003-7:2019`/).to_stderr
     end
 
     it "return nil when year is incorrect" do

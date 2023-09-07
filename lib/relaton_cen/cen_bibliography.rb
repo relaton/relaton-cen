@@ -13,11 +13,14 @@ module RelatonCen
         raise RelatonBib::RequestError, e.message
       end
 
+      #
       # @param code [String] the CEN standard Code to look up
       # @param year [String] the year the standard was published (optional)
-      # @param opts [Hash] options; restricted to :all_parts if all-parts
-      #   reference is required
+      # @param opts [Hash] options
+      # @option opts [Boolean] :keep_year don't upate reference
+      #
       # @return [RelatonBib::BibliographicItem, nil]
+      #
       def get(code, year = nil, opts = {})
         code_parts = code_to_parts code
         year ||= code_parts[:year] if code_parts
@@ -64,9 +67,8 @@ module RelatonCen
 
       # @param code [String]
       # @return [RelatonCen::HitCollection]
-      def search_filter(code) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/MethodLength,Metrics/PerceivedComplexity
+      def search_filter(code) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/PerceivedComplexity
         parts = code_to_parts code
-        warn "[relaton-cen] (\"#{code}\") fetching..."
         result = search(code)
         result.select do |i|
           pts = code_to_parts i.hit[:code]
@@ -97,12 +99,14 @@ module RelatonCen
         { years: missed_years }
       end
 
-      def bib_get(code, year, _opts)
+      def bib_get(code, year, opts) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/PerceivedComplexity,Metrics/MethodLength
+        ref = year.nil? || code.match?(/:\d{4}/) ? code : "#{code}:#{year}"
+        warn "[relaton-cen] (#{ref}) fetching..."
         result = search_filter(code) || return
         ret = isobib_results_filter(result, year)
         if ret[:ret]
-          bib = year ? ret[:ret] : ret[:ret].to_most_recent_reference
-          warn "[relaton-cen] (#{code}) found `#{bib.docidentifier.first&.id}`"
+          bib = year || opts[:keep_year] ? ret[:ret] : ret[:ret].to_most_recent_reference
+          warn "[relaton-cen] (#{ref}) found `#{bib.docidentifier.first&.id}`"
           bib
         else
           fetch_ref_err(code, year, ret[:years])
