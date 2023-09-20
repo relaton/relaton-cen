@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 RSpec.describe RelatonCen do
+  before { RelatonCen.instance_variable_set :@configuration, nil }
+
   it "has a version number" do
     expect(RelatonCen::VERSION).not_to be nil
   end
@@ -62,6 +64,8 @@ RSpec.describe RelatonCen do
   end
 
   context "get document by year" do
+    before { RelatonCen.instance_variable_set :@configuration, nil }
+
     it "in code" do
       VCR.use_cassette "cen_iso_ts_21003_7" do
         bib = RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7:2019"
@@ -81,7 +85,7 @@ RSpec.describe RelatonCen do
         bib = ""
         expect do
           bib = RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7", "2018"
-        end.to output(/There was no match for 2018/).to_stderr
+        end.to output(/There was no match for `2018`/).to_stderr
         expect(bib).to be_nil
       end
     end

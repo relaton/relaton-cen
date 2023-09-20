@@ -47,11 +47,11 @@ module RelatonCen
 
       def fetch_ref_err(code, year, missed_years) # rubocop:disable Metrics/MethodLength
         id = year ? "#{code}:#{year}" : code
-        warn "[relaton-cen] WARNING: no match found online for #{id}. "\
-             "The code must be exactly like it is on the standards website."
+        Util.warn "WARNING: no match found online for `#{id}`. " \
+                  "The code must be exactly like it is on the standards website."
         unless missed_years.empty?
-          warn "[relaton-cen] (There was no match for #{year}, though there "\
-               "were matches found for #{missed_years.join(', ')}.)"
+          Util.warn "(There was no match for `#{year}`, though there " \
+                    "were matches found for `#{missed_years.join('`, `')}`.)"
         end
         # if /\d-\d/.match? code
         #   warn "[relaton-cen] The provided document part may not exist, or "\
@@ -101,12 +101,12 @@ module RelatonCen
 
       def bib_get(code, year, opts) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/PerceivedComplexity,Metrics/MethodLength
         ref = year.nil? || code.match?(/:\d{4}/) ? code : "#{code}:#{year}"
-        warn "[relaton-cen] (#{ref}) fetching..."
+        Util.warn "(#{ref}) fetching..."
         result = search_filter(code) || return
         ret = isobib_results_filter(result, year)
         if ret[:ret]
           bib = year || opts[:keep_year] ? ret[:ret] : ret[:ret].to_most_recent_reference
-          warn "[relaton-cen] (#{ref}) found `#{bib.docidentifier.first&.id}`"
+          Util.warn "(#{ref}) found `#{bib.docidentifier.first&.id}`"
           bib
         else
           fetch_ref_err(code, year, ret[:years])
