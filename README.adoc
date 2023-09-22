@@ -35,13 +35,24 @@ $ gem install relaton-cen
 
 For CENELEC standards, use references with the prefix `CEN/CLC`. For example, `CEN/CLC Guide 6`.
 
-=== Search for a standard using keywords
+=== Configuration
+
+Configuration is optional. The available option is `logger` which is a `Logger` instance. By default, the logger is `Logger.new($stderr)` with `Logger::WARN` level. To change the logger level, use `RelatonCen.configure` block.
 
 [source,ruby]
 ----
 require 'relaton_cen'
 => true
 
+RelatonCen.configure do |config|
+  config.logger.level = Logger::DEBUG
+end
+----
+
+=== Search for a standard using keywords
+
+[source,ruby]
+----
 hit_collection = RelatonCen::CenBibliography.search("CEN ISO/TS 21003-7")
 => <RelatonCen::HitCollection:0x00000000017de0 @ref=ISO/TS 21003-7 @fetched=false>
 
