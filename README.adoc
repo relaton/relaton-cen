@@ -74,8 +74,8 @@ Use `RelatonCen::CenBibliography.get(ref, year, options)` to get a standard by i
 ----
 # With year in reference
 RelatonCen::CenBibliography.get "EN 10160:1999"
-[relaton-cen] (EN 10160:1999) fetching...
-[relaton-cen] (EN 10160:1999) found `EN 10160:1999`
+[relaton-cen] (EN 10160:1999) Fetching from standards.cencenelec.eu ...
+[relaton-cen] (EN 10160:1999) Found: `EN 10160:1999`
 => #<RelatonCen::BibliographicItem:0x0000000112d8b900
 ...
 
@@ -84,17 +84,17 @@ RelatonCen::CenBibliography.get "EN 10160", "1999"
 
 # To get the most recent version of a standard by its code use reference without year
 > RelatonCen::CenBibliography.get "CEN/CLC Guide 6"
-[relaton-cen] (CEN/CLC Guide 6) fetching...
+[relaton-cen] (CEN/CLC Guide 6) Fetching from standards.cencenelec.eu ...
 [isoics] code   not found in ICS list
-[relaton-cen] (CEN/CLC Guide 6) found `CEN/CLC Guide 6`
+[relaton-cen] (CEN/CLC Guide 6) Found: `CEN/CLC Guide 6`
 => #<RelatonCen::BibliographicItem:0x0000000112d81680
 ...
 
 # To keep the year in ID use `keep_year` option
 > RelatonCen::CenBibliography.get "CEN/CLC Guide 6", nil, keep_year: true
-[relaton-cen] (CEN/CLC Guide 6) fetching...
+[relaton-cen] (CEN/CLC Guide 6) Fetching from standards.cencenelec.eu ...
 [isoics] code   not found in ICS list
-[relaton-cen] (CEN/CLC Guide 6) found `CEN/CLC Guide 6:2014`
+[relaton-cen] (CEN/CLC Guide 6) Found: `CEN/CLC Guide 6:2014`
 => #<RelatonCen::BibliographicItem:0x0000000112d8b400
 ...
 ----
@@ -143,14 +143,14 @@ item.link
 [source,ruby]
 ----
 RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7:2019"
-[relaton-cen] (CEN ISO/TS 21003-7) fetching...
-[relaton-cen] (CEN ISO/TS 21003-7) found CEN `ISO/TS 21003-7:2019`
+[relaton-cen] (CEN ISO/TS 21003-7) Fetching from standards.cencenelec.eu ...
+[relaton-cen] (CEN ISO/TS 21003-7) Found: CEN `ISO/TS 21003-7:2019`
 => #<RelatonIsoBib::IsoBibliographicItem:0x00007fadcd596c58
 ...
 
 RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7", "2019"
-[relaton-cen] (CEN ISO/TS 21003-7) fetching...
-[relaton-cen] (CEN ISO/TS 21003-7) found CEN `ISO/TS 21003-7:2019`
+[relaton-cen] (CEN ISO/TS 21003-7) Fetching from standards.cencenelec.eu ...
+[relaton-cen] (CEN ISO/TS 21003-7) Found: CEN `ISO/TS 21003-7:2019`
 => #<RelatonIsoBib::IsoBibliographicItem:0x00007fadcd5df9f8
 ...
 ----
