@@ -32,7 +32,7 @@ http_interactions:
       Cache-Control:
       - no-cache, no-store, max-age=0, must-revalidate
       Keep-Alive:
-      - timeout=15, max=96
+      - timeout=15, max=100
       Pragma:
       - no-cache
       Content-Type:
@@ -40,11 +40,11 @@ http_interactions:
       Server:
       - '0'
       Set-Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=911977413099501
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=911977413099501
-      - WWV_CUSTOM-F_1752901311939974_205=272A81E902828403835D707AC7080DCE
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=981069868327201
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=981069868327201
+      - WWV_CUSTOM-F_1752901311939974_205=ED323B80855BAA7F0E1BB744D52DCE0B
       X-Db-Content-Length:
-      - '253550'
+      - '253549'
       X-Powered-By:
       - '0'
       X-Frame-Options:
@@ -54,9 +54,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Sun, 29 Oct 2023 02:25:49 GMT
+      - Sun, 29 Oct 2023 02:32:32 GMT
       Content-Length:
-      - '253550'
+      - '253549'
     body:
       encoding: UTF-8
       string: "<html>\r\n<!-- <head>\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;
@@ -404,8 +404,8 @@ http_interactions:
         name=\"wwv_flow\" id=\"wwvFlowForm\">\n<input type=\"hidden\" name=\"p_flow_id\"
         value=\"205\" id=\"pFlowId\" /><input type=\"hidden\" name=\"p_flow_step_id\"
         value=\"105\" id=\"pFlowStepId\" /><input type=\"hidden\" name=\"p_instance\"
-        value=\"911977413099501\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
-        value=\"651190404065901\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
+        value=\"981069868327201\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
+        value=\"38244476399501\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
         name=\"p_request\" value=\"\" id=\"pRequest\" />\r\n<div class=\"bodyContainer\">\r\n\t<div
         class=\"container\">\r\n\t\t<div class=\"content-text content-apex\">\r\n\t\t\t<div
         class=\"row\">\r\n\t\t\t\t<div class=\"col-md-12\">\r\n\t\t\t\t\t<!-- APEX
@@ -3064,7 +3064,7 @@ http_interactions:
         end form-thread-bot -->\r\n                                </div>\r\n                            </div>\r\n
         \                           <!-- end sformsub1 -->\r\n\r\n\r\n<input type=\"hidden\"
         name=\"p_md5_checksum\" value=\"\"  /><input type=\"hidden\" name=\"p_page_checksum\"
-        value=\"2D73107143A87F4FD50DA126466FE1B9\"  /></form>\r\n\r\n\r\n\r\n                        <div
+        value=\"8F0A1520C63E5A15E074E82D01EF426D\"  /></form>\r\n\r\n\r\n\r\n                        <div
         id=\"sformsub2\">\r\n                            <div class=\"dash-top\">\r\n
         \                               <div class=\"dash-subnav\"></div>\r\n                            </div>\r\n
         \                           <div id=\"sdashsub1\">\r\n                                <div
@@ -3198,13 +3198,13 @@ http_interactions:
         = response['redirectUrl'];\r\n                                }\r\n                            }\r\n
         \   </script>\r\n<!-- #EndEditable --> \r\n\r\n</HTML><script type=\"text/javascript\">\r\n<!--
         \r\n\r\n//-->\r\n</script></HTML>"
-  recorded_at: Sun, 29 Oct 2023 02:25:50 GMT
+  recorded_at: Sun, 29 Oct 2023 02:32:34 GMT
 - request:
     method: post
     uri: https://standards.cencenelec.eu/dyn/www/wwv_flow.accept
     body:
       encoding: UTF-8
-      string: p_flow_id=205&p_flow_step_id=105&p_instance=911977413099501&p_page_submission_id=651190404065901&p_request=S1-S2-S3-S4-S5-S6-S7-CEN-CLC-&f20=CEN_CLC_CHOICE&f21=CEN&f21=CLC&f10=KEYWORDS_AND&f11=&f10=LANGUAGE_LIST&f11=0&f10=TC_CODE_LIST&f11=&f10=TC_NAME_LIST&f11=&f10=HEAD_LIST&f11=&f10=STAND_REF&f11=EN+10160%3A1999&f10=DIRECTIVES_LIST&f11=&f20=STATUS_CHOICE&f21=S1&f21=S2&f21=S3&f21=S4&f21=S5&f21=S6&f21=S7&f10=ICS_LIST&f11=&f10=SEC_LIST&f11=&f10=SDG_LIST&f11=&p_md5_checksum=&p_page_checksum=2D73107143A87F4FD50DA126466FE1B9
+      string: p_flow_id=205&p_flow_step_id=105&p_instance=981069868327201&p_page_submission_id=38244476399501&p_request=S1-S2-S3-S4-S5-S6-S7-CEN-CLC-&f20=CEN_CLC_CHOICE&f21=CEN&f21=CLC&f10=KEYWORDS_AND&f11=&f10=LANGUAGE_LIST&f11=0&f10=TC_CODE_LIST&f11=&f10=TC_NAME_LIST&f11=&f10=HEAD_LIST&f11=&f10=STAND_REF&f11=ENV+1613%3A1995&f10=DIRECTIVES_LIST&f11=&f20=STATUS_CHOICE&f21=S1&f21=S2&f21=S3&f21=S4&f21=S5&f21=S6&f21=S7&f10=ICS_LIST&f11=&f10=SEC_LIST&f11=&f10=SDG_LIST&f11=&p_md5_checksum=&p_page_checksum=8F0A1520C63E5A15E074E82D01EF426D
     headers:
       Accept-Encoding:
       - gzip,deflate,identity
@@ -3218,7 +3218,7 @@ http_interactions:
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=911977413099501; WWV_CUSTOM-F_1752901311939974_205=272A81E902828403835D707AC7080DCE
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=981069868327201; WWV_CUSTOM-F_1752901311939974_205=ED323B80855BAA7F0E1BB744D52DCE0B
       Host:
       - standards.cencenelec.eu
       Referer:
@@ -3226,7 +3226,7 @@ http_interactions:
       Content-Type:
       - application/octet-stream
       Content-Length:
-      - '525'
+      - '524'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -3237,7 +3237,7 @@ http_interactions:
       message: Found
     headers:
       Keep-Alive:
-      - timeout=15, max=95
+      - timeout=15, max=99
       Content-Type:
       - text/plain
       Location:
@@ -3255,13 +3255,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Sun, 29 Oct 2023 02:25:50 GMT
+      - Sun, 29 Oct 2023 02:32:34 GMT
       Content-Length:
       - '0'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sun, 29 Oct 2023 02:25:51 GMT
+  recorded_at: Sun, 29 Oct 2023 02:32:34 GMT
 - request:
     method: get
     uri: 'https://standards.cencenelec.eu/dyn/www/f?p=205:105:0:::::'
@@ -3281,7 +3281,7 @@ http_interactions:
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=911977413099501; WWV_CUSTOM-F_1752901311939974_205=272A81E902828403835D707AC7080DCE
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=981069868327201; WWV_CUSTOM-F_1752901311939974_205=ED323B80855BAA7F0E1BB744D52DCE0B
       Host:
       - standards.cencenelec.eu
       Referer:
@@ -3296,13 +3296,13 @@ http_interactions:
       message: OK
     headers:
       Keep-Alive:
-      - timeout=15, max=94
+      - timeout=15, max=98
       Content-Type:
       - text/html; charset=UTF-8
       Server:
       - '0'
       X-Db-Content-Length:
-      - '254573'
+      - '254533'
       X-Powered-By:
       - '0'
       X-Frame-Options:
@@ -3312,9 +3312,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Sun, 29 Oct 2023 02:25:50 GMT
+      - Sun, 29 Oct 2023 02:32:35 GMT
       Content-Length:
-      - '254573'
+      - '254533'
     body:
       encoding: UTF-8
       string: "\n<html>\r\n<!-- <head>\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;
@@ -3662,8 +3662,8 @@ http_interactions:
         name=\"wwv_flow\" id=\"wwvFlowForm\">\n<input type=\"hidden\" name=\"p_flow_id\"
         value=\"205\" id=\"pFlowId\" /><input type=\"hidden\" name=\"p_flow_step_id\"
         value=\"105\" id=\"pFlowStepId\" /><input type=\"hidden\" name=\"p_instance\"
-        value=\"911977413099501\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
-        value=\"1143931857952401\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
+        value=\"981069868327201\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
+        value=\"1459649089699701\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
         name=\"p_request\" value=\"\" id=\"pRequest\" />\r\n<div class=\"bodyContainer\">\r\n\t<div
         class=\"container\">\r\n\t\t<div class=\"content-text content-apex\">\r\n\t\t\t<div
         class=\"row\">\r\n\t\t\t\t<div class=\"col-md-12\">\r\n\t\t\t\t\t<!-- APEX
@@ -4806,7 +4806,7 @@ http_interactions:
         for=\"delivstref\">Standard Reference</label>\r\n                                            <!--
         #BeginEditable \"ADVSEARCH_DELIVERABLE_STREF\" --><input type=\"hidden\" name=\"f10\"
         value=\"STAND_REF\"  /><input type=\"text\" name=\"f11\" size=\"25\" maxlength=\"35\"
-        value=\"EN 10160:1999\" onkeypress=\"keypressed(event)\" id=\"STAND_REF\"
+        value=\"ENV 1613:1995\" onkeypress=\"keypressed(event)\" id=\"STAND_REF\"
         /><!-- #EndEditable -->\r\n                                        </div>\r\n
         \                                   </div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"row\">\r\n
         \                                       <div class=\"col-md-2 col-sm-12 labelTitle\">Legal
@@ -6326,7 +6326,7 @@ http_interactions:
         end form-thread-bot -->\r\n                                </div>\r\n                            </div>\r\n
         \                           <!-- end sformsub1 -->\r\n\r\n\r\n<input type=\"hidden\"
         name=\"p_md5_checksum\" value=\"\"  /><input type=\"hidden\" name=\"p_page_checksum\"
-        value=\"409BEC142A7350E5EEDCA4AD9BEF4D7A\"  /></form>\r\n\r\n\r\n\r\n                        <div
+        value=\"2D6B2DE7952EFEC8D94EA2FBCA5C84D6\"  /></form>\r\n\r\n\r\n\r\n                        <div
         id=\"sformsub2\">\r\n                            <div class=\"dash-top\">\r\n
         \                               <div class=\"dash-subnav\"></div>\r\n                            </div>\r\n
         \                           <div id=\"sdashsub1\">\r\n                                <div
@@ -6354,10 +6354,10 @@ http_interactions:
         class=\"title\">Committee</div>\n</th>\n<th style=\"width:50%;\">\n<div class=\"title\">Reference,
         Title</div>\n</th>\n<th style=\"width:20%;\">\n<div class=\"title\">Status</div>\n</th>\n<th
         class=\"last\" style=\"width:10%;\">\n<div class=\"title\">Sales Points</div>\n</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>CEN/TC
-        459/SC 1</td>\n<td>\n<strong>\n<a href=\"f?p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:19677,733642&cs=164A85D79EC87EC8DA38B838C6399F8B7\">EN
-        10160:1999</a>\n</strong> (WI=EC101103)<br/>Ultrasonic testing of steel flat
-        product of thickness equal or greater than 6 mm (reflection method)</td>\n<td>Published</td>\n<td>\n<a
-        href=\"f?p=CEN:35:0::::FSP_SURR_WI,FSP_ORG_ID:19677,733642&cs=193B27EB0CF435AB3AC93DE907CA35498\">\n<img
+        251</td>\n<td>\n<strong>\n<a href=\"f?p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:12532,6232&cs=1DB320D8297C69AEE4814FDEC9404BFBC\">ENV
+        1613:1995</a>\n</strong> (WI=00251027)<br/>Medical informatics - Messages
+        for exchange of laboratory information</td>\n<td>Withdrawn</td>\n<td>\n<a
+        href=\"f?p=CEN:35:0::::FSP_SURR_WI,FSP_ORG_ID:12532,6232&cs=1AAD86E4CE252ED201C2F04219C76EF0F\">\n<img
         src=\"/img/shopping-cart.png\"/>\n</a>\n</td>\n</tr>\n</tbody>\n</table>\n<!--
         #EndEditable -->\r\n                                    </div>\r\n                                    <br>\r\n
         \                               </div>\r\n                            </div>\r\n
@@ -6469,10 +6469,10 @@ http_interactions:
         = response['redirectUrl'];\r\n                                }\r\n                            }\r\n
         \   </script>\r\n<!-- #EndEditable --> \r\n\r\n</HTML><script type=\"text/javascript\">\r\n<!--
         \r\n\r\n//-->\r\n</script></HTML>"
-  recorded_at: Sun, 29 Oct 2023 02:25:52 GMT
+  recorded_at: Sun, 29 Oct 2023 02:32:36 GMT
 - request:
     method: get
-    uri: https://standards.cencenelec.eu/dyn/www/f?cs=164A85D79EC87EC8DA38B838C6399F8B7&p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:19677,733642
+    uri: https://standards.cencenelec.eu/dyn/www/f?cs=1DB320D8297C69AEE4814FDEC9404BFBC&p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:12532,6232
     body:
       encoding: US-ASCII
       string: ''
@@ -6489,7 +6489,7 @@ http_interactions:
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=911977413099501; WWV_CUSTOM-F_1752901311939974_205=272A81E902828403835D707AC7080DCE
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=981069868327201; WWV_CUSTOM-F_1752901311939974_205=ED323B80855BAA7F0E1BB744D52DCE0B
       Host:
       - standards.cencenelec.eu
       Referer:
@@ -6504,13 +6504,13 @@ http_interactions:
       message: OK
     headers:
       Keep-Alive:
-      - timeout=15, max=93
+      - timeout=15, max=97
       Content-Type:
       - text/html; charset=UTF-8
       Server:
       - '0'
       X-Db-Content-Length:
-      - '50788'
+      - '49870'
       X-Powered-By:
       - '0'
       X-Frame-Options:
@@ -6520,22 +6520,22 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Sun, 29 Oct 2023 02:25:52 GMT
+      - Sun, 29 Oct 2023 02:32:36 GMT
       Content-Length:
-      - '50788'
+      - '49870'
     body:
       encoding: UTF-8
       string: "\n<html>\r\n<!-- <head>\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;
         charset=utf-8\" /></head> -->\r\n\r\n  <head>\r\n    <!-- #BeginEditable \"INCLUDE_HEAD\"
         --><meta charset=\"utf-8\"/>\r\n<!-- #BeginEditable \"DOCTITLE\" --><title>CEN
-        - CEN/TC 459/SC 1</title>\r<!-- #EndEditable -->\r\n<!-- #BeginEditable \"METATAGS\"
-        --><meta name=\"Description\" content=\"CEN/TC 459/SC 1 Test methods for steel
-        (other than chemical analysis)\">\r<meta name=\"Keywords\" content=\"CEN,
-        Standards Development, Technical Bodies, CEN/TC 459/SC 1\">\r<meta name=\"Copyright\"
-        content=\"CEN - European Committee for Standardization\">\r<meta name=\"Language\"
-        content=\"English, Français,Deutsch\">\r<!-- #EndEditable -->\r\n<meta name=\"viewport\"
-        content=\"width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes,
-        minimal-ui\">\r\n<link href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap\"
+        - CEN/TC 251</title>\r<!-- #EndEditable -->\r\n<!-- #BeginEditable \"METATAGS\"
+        --><meta name=\"Description\" content=\"CEN/TC 251 Health informatics\">\r<meta
+        name=\"Keywords\" content=\"CEN, Standards Development, Technical Bodies,
+        CEN/TC 251\">\r<meta name=\"Copyright\" content=\"CEN - European Committee
+        for Standardization\">\r<meta name=\"Language\" content=\"English, Français,Deutsch\">\r<!--
+        #EndEditable -->\r\n<meta name=\"viewport\" content=\"width=device-width,
+        initial-scale=1, maximum-scale=3, user-scalable=yes, minimal-ui\">\r\n<link
+        href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap\"
         rel=\"stylesheet\">\r\n<link href=\"/dist/bootstrap-4.3.1-dist/css/bootstrap.css\"
         rel=\"stylesheet\"/>\r\n<link href=\"/dist/lib/owl.carousel.min.css\" rel=\"stylesheet\"/>\r\n<link
         href=\"/dist/lib/daterangepicker.css\" rel=\"stylesheet\" />\r\n<link href=\"/dist/css/styles-pb__v-637577804120000001.css\"
@@ -6846,22 +6846,21 @@ http_interactions:
         \           <div class=\"col-md-12\">\r\n\r\n                <!-- APEX CONTENT
         START -->\r\n\r\n                <div class=\"Dashboard\">\r\n                    <table
         border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n                        <tbody>\r\n\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t<td><h1><!--
-        #BeginEditable \"DASHBOARD_COM_ID\" -->CEN/TC 459/SC 1<!-- #EndEditable --></h1></td>\r\n\t\t\t\t\t\t\t\t<td><h1>&nbsp;-&nbsp;</h1></td>\r\n\t\t\t\t\t\t\t\t<td><h1><!--
-        #BeginEditable \"DASHBOARD_COM_TITLE\" -->Test methods for steel (other than
-        chemical analysis)<!-- #EndEditable --></h1></td>\r\n\t\t\t\t\t\t\t</tr>\r\n
-        \                       </tbody>\r\n\t\t\t\t\t</table>\r\n                    <div
-        class=\"dash-nav dash-nav-secondary\">\r\n                        <ul>\r\n
+        #BeginEditable \"DASHBOARD_COM_ID\" -->CEN/TC 251<!-- #EndEditable --></h1></td>\r\n\t\t\t\t\t\t\t\t<td><h1>&nbsp;-&nbsp;</h1></td>\r\n\t\t\t\t\t\t\t\t<td><h1><!--
+        #BeginEditable \"DASHBOARD_COM_TITLE\" -->Health informatics<!-- #EndEditable
+        --></h1></td>\r\n\t\t\t\t\t\t\t</tr>\r\n                        </tbody>\r\n\t\t\t\t\t</table>\r\n
+        \                   <div class=\"dash-nav dash-nav-secondary\">\r\n                        <ul>\r\n
         \                           <!-- #BeginEditable \"DASHBOARD_LINK0\" --><li><a
-        \ href=\"f?p=205:7:0::::FSP_ORG_ID:733642&#38;cs=16008000853CE3F32659158EF655B68D2\"><span
+        \ href=\"f?p=205:7:0::::FSP_ORG_ID:6232&#38;cs=179BCDF5F3C53AF099558615A53207584\"><span
         class=\"dashlink-left-first\"></span><span class=\"dashlink-mid\">General</span><span
         class=\"dashlink-right\"></span></a></li><!-- #EndEditable -->\r\n                            <!--
-        #BeginEditable \"DASHBOARD_LINK1\" --><li><a href=\"f?p=205:29:0::::FSP_ORG_ID,FSP_LANG_ID:733642,25&#38;cs=18BA13E609700D4CB01338073013EC29E#1\"><span
+        #BeginEditable \"DASHBOARD_LINK1\" --><li><a href=\"f?p=205:29:0::::FSP_ORG_ID,FSP_LANG_ID:6232,25&#38;cs=17A8DF68AE459FA05A3DD08F026BCF538#1\"><span
         class=\"dashlink-left\"></span><span class=\"dashlink-mid\">Structure</span><span
         class=\"dashlink-right\"></span></a></li><!-- #EndEditable -->\r\n                            <!--
-        #BeginEditable \"DASHBOARD_LINK2\" --><li><a href=\"f?p=205:22:0::::FSP_ORG_ID,FSP_LANG_ID:733642,25&#38;cs=18BA13E609700D4CB01338073013EC29E\"><span
+        #BeginEditable \"DASHBOARD_LINK2\" --><li><a class=\"on\"href=\"f?p=205:22:0::::FSP_ORG_ID,FSP_LANG_ID:6232,25&#38;cs=17A8DF68AE459FA05A3DD08F026BCF538\"><span
         class=\"dashlink-left\"></span><span class=\"dashlink-mid\">Work programme</span><span
         class=\"dashlink-right\"></span></a></li><!-- #EndEditable -->\r\n                            <!--
-        #BeginEditable \"DASHBOARD_LINK3\" --><li><a class=\"on\"href=\"f?p=205:32:0::::FSP_ORG_ID,FSP_LANG_ID:733642,25&#38;cs=18BA13E609700D4CB01338073013EC29E\"><span
+        #BeginEditable \"DASHBOARD_LINK3\" --><li><a href=\"f?p=205:32:0::::FSP_ORG_ID,FSP_LANG_ID:6232,25&#38;cs=17A8DF68AE459FA05A3DD08F026BCF538\"><span
         class=\"dashlink-left\"></span><span class=\"dashlink-mid\">Published Standards</span><span
         class=\"dashlink-right\"></span></a></li><!-- #EndEditable -->\r\n                        </ul>\r\n
         \                   </div>\r\n                    <div class=\"r-right\"><img
@@ -6870,9 +6869,9 @@ http_interactions:
         class=\"Dash-Container\">\r\n\t\t\t\t\t\t<div class=\"dash-top\">\r\n\t\t\t\t\t\t\t<div
         class=\"dash-subnav\">\r\n                                <div class=\"dash-tools\">\r\n
         \                                   <div class=\"right-tools\"> <!-- #BeginEditable
-        \"DASHBOARD_LANGUAGE\" --><a class=\"bt-en-on\" href=\"f?p=205:110:0::::FSP_ORG_ID,FSP_LANG_ID:733642,25&#38;cs=18BA13E609700D4CB01338073013EC29E\">En</a>
-        <a class=\"bt-fr\" href=\"f?p=205:110:0::::FSP_ORG_ID,FSP_LANG_ID:733642,34&#38;cs=1D57F4F49469B79881A739F2EF95F9D3A\">Fr</a><a
-        class=\"bt-de\" href=\"f?p=205:110:0::::FSP_ORG_ID,FSP_LANG_ID:733642,22&#38;cs=15DC6209DF6F5F3BDBF6CFDFD0C695F25\">De</a><!--
+        \"DASHBOARD_LANGUAGE\" --><a class=\"bt-en-on\" href=\"f?p=205:110:0::::FSP_ORG_ID,FSP_LANG_ID:6232,25&#38;cs=17A8DF68AE459FA05A3DD08F026BCF538\">En</a>
+        <a class=\"bt-fr\" href=\"f?p=205:110:0::::FSP_ORG_ID,FSP_LANG_ID:6232,34&#38;cs=1C958CB1B630CB832BE4344FF315D7FAD\">Fr</a><a
+        class=\"bt-de\" href=\"f?p=205:110:0::::FSP_ORG_ID,FSP_LANG_ID:6232,22&#38;cs=10EB90C931019A57B8B2BA0DE2BF1FEAC\">De</a><!--
         #EndEditable --></div>\r\n                                </div>\r\n                                <ul>\r\n
         \                                   <li>&nbsp;</li>\r\n                                    <!--
         must appear, even when empty -->\r\n                                </ul>\r\n
@@ -6885,23 +6884,20 @@ http_interactions:
         end dash thread-->\r\n\t\t\t\t\t\t\t\t\t<div id=\"DASHBOARD_LISTPROJECT\"><!--
         #BeginEditable \"DASHBOARD_CONTENT_PROJECT\" --><table class=\"dashlist\"
         width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n<tr>\n<th
-        class=\"detail\" width=\"35%\">Reference</th>\n<td>EN 10160:1999</td>\n</tr>\n<tr>\n<th
-        class=\"detail\" width=\"35%\">Title</th>\n<td>Ultrasonic testing of steel
-        flat product of thickness equal or greater than 6 mm (reflection method)</td>\n</tr>\n<tr>\n<th
-        class=\"detail\" width=\"35%\">Work Item Number</th>\n<td>EC101103</td>\n</tr>\n<tr>\n<th
-        class=\"detail\" width=\"35%\">Abstract/Scope</th>\n<td>This European Standard
-        describes a method for the ultrasonic testing of uncoatedflat steel product
-        for internal discontinuities. It is applicable to flat product in nominal
-        thickness range of 6 mm to 200 mm of non-alloyed or alloyed steel, excluding
-        austenitic or austenoferritic steels. However, this standard may be applied
-        to the latter types of steels provided that the difference between the amplitude
-        of the noise signal and that of the echo detection threshold is sufficient
-        for the limit fixed.</td>\n</tr>\n<tr>\n<th class=\"detail\">Status</th>\n<td>\n<div
-        class=\"no-overflow100\">Published</div>\n</td>\n</tr>\n<tr>\n<th class=\"detail\">Reference
+        class=\"detail\" width=\"35%\">Reference</th>\n<td>ENV 1613:1995</td>\n</tr>\n<tr>\n<th
+        class=\"detail\" width=\"35%\">Title</th>\n<td>Medical informatics - Messages
+        for exchange of laboratory information</td>\n</tr>\n<tr>\n<th class=\"detail\"
+        width=\"35%\">Work Item Number</th>\n<td>00251027</td>\n</tr>\n<tr>\n<th class=\"detail\"
+        width=\"35%\">Abstract/Scope</th>\n<td>This European Prestandard specifies
+        general messages for electronic information exchange between clinical laboratories'
+        computer systems and computer systems used by healthcare parties requesting
+        the services of, or receiving results from, clinical laboratories (abbreviated
+        as laboratories in this Prestandard).</td>\n</tr>\n<tr>\n<th class=\"detail\">Status</th>\n<td>\n<div
+        class=\"no-overflow100\">Withdrawn</div>\n</td>\n</tr>\n<tr>\n<th class=\"detail\">Reference
         Document</th>\n<td>\n<div></div>\n</td>\n</tr>\n<tr>\n<th class=\"detail\"
-        width=\"35%\">date of Availability (DAV)</th>\n<td>1999-07-14</td>\n</tr>\n<tr>\n<th
-        class=\"detail\" width=\"35%\">ICS</th>\n<td>77.040.20 - Non-destructive testing
-        of metals<br/>77.140.50 - Flat steel products and semi-products</td>\n</tr>\n<tr>\n<th
+        width=\"35%\">date of Availability (DAV)</th>\n<td>1995-07-26</td>\n</tr>\n<tr>\n<th
+        class=\"detail\" width=\"35%\">ICS</th>\n<td>11.020.10 - Health care services
+        in general<br/>35.240.80 - IT applications in health care technology</td>\n</tr>\n<tr>\n<th
         class=\"detail\" width=\"35%\">A-Deviation(s)</th>\n<td> </td>\n</tr>\n<tr>\n<th
         class=\"detail\" width=\"35%\">Special National Condition(s)</th>\n<td> </td>\n</tr>\n</table>\n<!--
         #EndEditable --></div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"dash-thread\">\r\n\t\t\t\t\t\t\t\t\t\t<div
@@ -6912,7 +6908,7 @@ http_interactions:
         #BeginEditable \"DASHBOARD_CONTENT_LEGAL\" --><table class=\"dashlist\" width=\"100%\"
         cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n<tr>\n<th class=\"detail\"
         width=\"35%\">Directive(s)</th>\n<td> </td>\n</tr>\n<tr>\n<th class=\"detail\"
-        width=\"35%\">Mandate(s)</th>\n<td>M/005</td>\n</tr>\n<tr>\n<th class=\"detail\"
+        width=\"35%\">Mandate(s)</th>\n<td>M/255</td>\n</tr>\n<tr>\n<th class=\"detail\"
         width=\"35%\">Citation in OJEU</th>\n<td> </td>\n</tr>\n</table>\n<!-- #EndEditable
         --></div>\t\r\n\t\t\t\t\t\t\t\t</div><!-- end left-pane -->\r\n\t\t\t\t\t\t\t\t<div
         class=\"right-pane\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"dash-thread\">\r\n\t\t\t\t\t\t\t\t\t\t<div
@@ -6922,11 +6918,11 @@ http_interactions:
         end dash thread-->\r\n\t\t\t\t\t\t\t\t\t<div id=\"DASHBOARD_LISTIMPLEMENTATIONDATES\"><!--
         #BeginEditable \"DASHBOARD_CONTENT_IMPLEMENTATIONDATES\" --><table class=\"dashlist\"
         width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n<tr>\n<th
-        class=\"detail\" align=\"left\" width=\"60%\">date of Ratification (DOR) (1)</th>\n<td>1999-03-03</td>\n</tr>\n<tr>\n<th
-        class=\"detail\" align=\"left\" width=\"60%\">date of Availability (DAV) (2)</th>\n<td>1999-07-14</td>\n</tr>\n<tr>\n<th
-        class=\"detail\" align=\"left\" width=\"60%\">date of Announcement (DOA) (3)</th>\n<td>1999-10-31</td>\n</tr>\n<tr>\n<th
-        class=\"detail\" align=\"left\" width=\"60%\">date of Publication (DOP) (4)</th>\n<td>2000-01-31</td>\n</tr>\n<tr>\n<th
-        class=\"detail\" align=\"left\" width=\"60%\">date of Withdrawal (DOW) (5)</th>\n<td>2000-01-31</td>\n</tr>\n</table>\n<!--
+        class=\"detail\" align=\"left\" width=\"60%\">date of Ratification (DOR) (1)</th>\n<td>1995-03-10</td>\n</tr>\n<tr>\n<th
+        class=\"detail\" align=\"left\" width=\"60%\">date of Availability (DAV) (2)</th>\n<td>1995-07-26</td>\n</tr>\n<tr>\n<th
+        class=\"detail\" align=\"left\" width=\"60%\">date of Announcement (DOA) (3)</th>\n<td>1995-10-26</td>\n</tr>\n<tr>\n<th
+        class=\"detail\" align=\"left\" width=\"60%\">date of Publication (DOP) (4)</th>\n<td></td>\n</tr>\n<tr>\n<th
+        class=\"detail\" align=\"left\" width=\"60%\">date of Withdrawal (DOW) (5)</th>\n<td></td>\n</tr>\n</table>\n<!--
         #EndEditable --></div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"dash-thread\">\r\n\t\t\t\t\t\t\t\t\t\t<div
         class=\"right\"></div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"left\"></div>\t\t\t
         \ \r\n\t\t\t\t\t\t\t\t\t\t<h3><!-- #BeginEditable \"DASHBOARD_LABEL_RELATIONS\"
@@ -6935,32 +6931,28 @@ http_interactions:
         #BeginEditable \"DASHBOARD_CONTENT_RELATIONS\" --><table class=\"dashlist\"
         width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n<tr>\n<th
         class=\"detail\" align=\"left\" width=\"45%\">Supersedes</th>\n<td> </td>\n</tr>\n<tr>\n<th
-        class=\"detail\" align=\"left\" width=\"45%\">Superseded by</th>\n<td> </td>\n</tr>\n<tr>\n<th
-        class=\"detail\" align=\"left\" width=\"45%\">Normative reference (6)</th>\n<td>\n<a
-        class=\"crossrefpopup\" onclick=\"return false\" href=\"f?p=205:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:EN-SPACE-1330-4,19677&#38;cs=118B27852933E266791029312EC387527\">EN
-        1330-4</a>\n<br/>\n<a class=\"crossrefpopup\" onclick=\"return false\" href=\"f?p=205:111:0::::FSP_PROJECT_CROSSREF,FSP_PROJECT:EN-SPACE-473,19677&#38;cs=1578C053B01B6DB849EF3AFB17DB45418\">EN
-        473</a>\n<br/>\n</td>\n</tr>\n<tr>\n<th class=\"detail\" align=\"left\" width=\"45%\">Sales
-        Points</th>\n<td>\n<a href=\"f?p=205:35:0::::FSP_SURR_WI:19677&#38;cs=16A1E610185BDCB96B83C365FBF9EC2F5\">\n<img
-        src=\"/img/shopping-cart.png\"/>\n</a>\n</td>\n</tr>\n</table>\n<!-- #EndEditable
-        --></div>\r\n\r\n<br>\t\t\t\r\n\t\t\t<p>(1) Date of ratification (dor) \r\ndate
-        when the Technical Board notes the approval of an EN (and HD for CENELEC),
-        from which time the standard may be said to be approved \r\n</p>\r\n<br>\r\n<p>\r\n(2)
-        Date of availability (dav) \r\ndate when the definitive text in the official
-        language versions of an approved CEN/CENELEC publication is distributed by
-        the Central Secretariat \r\n</p>\r\n<br>\r\n<p>\r\n(3) Date of announcement
-        (doa) \r\nlatest date by which the existence of an EN (and HD for CENELEC),
-        a TS or a CWA has to be announced at national level \r\n</p>\r\n<br>\r\n<p>\r\n\r\n(4)
-        Date of publication (dop) \r\nlatest date by which an EN has to be implemented
-        at national level by publication of an identical national standard or by endorsement
-        \r\n</p>\r\n<br>\r\n<p>\r\n\r\n(5) Date of withdrawal (dow) \r\nlatest date
-        by which national standards conflicting with an EN (and HD for CENELEC) have
-        to be withdrawn\r\n</p>\r\n<br>\r\n<p>\r\n\r\n(6) This list of normative references
-        is purely indicative. The only official list of normative reference is the
-        list of the published standard.\r\n</p>\r\n<br>\r\n<p>\r\nIn the case of undated
-        standard, a link to the last dated version is provided. \r\n</p>\r\n<br>\r\n<p>\r\nIn
-        the case of series, a link to each standard identified in the series is provided.
-        \r\n</p>\r\n<br>\r\n<p>\r\nWe also invite you to check (via the website) whether
-        corrigenda and/or amendments shall be read in conjunction with the main standard.\r\n</p>\t\t\t\t\r\n\t\t\t\t\t\t\t\t</div><!--
+        class=\"detail\" align=\"left\" width=\"45%\">Superseded by</th>\n<td>\n<a
+        href=\"f?p=CEN:110:0::::FSP_PROJECT:12635&cs=10644EA9B42BBA8F3C11DBC2689F82E6F\">EN
+        14720-1:2005</a>\n</td>\n</tr>\n</table>\n<!-- #EndEditable --></div>\r\n\r\n<br>\t\t\t\r\n\t\t\t<p>(1)
+        Date of ratification (dor) \r\ndate when the Technical Board notes the approval
+        of an EN (and HD for CENELEC), from which time the standard may be said to
+        be approved \r\n</p>\r\n<br>\r\n<p>\r\n(2) Date of availability (dav) \r\ndate
+        when the definitive text in the official language versions of an approved
+        CEN/CENELEC publication is distributed by the Central Secretariat \r\n</p>\r\n<br>\r\n<p>\r\n(3)
+        Date of announcement (doa) \r\nlatest date by which the existence of an EN
+        (and HD for CENELEC), a TS or a CWA has to be announced at national level
+        \r\n</p>\r\n<br>\r\n<p>\r\n\r\n(4) Date of publication (dop) \r\nlatest date
+        by which an EN has to be implemented at national level by publication of an
+        identical national standard or by endorsement \r\n</p>\r\n<br>\r\n<p>\r\n\r\n(5)
+        Date of withdrawal (dow) \r\nlatest date by which national standards conflicting
+        with an EN (and HD for CENELEC) have to be withdrawn\r\n</p>\r\n<br>\r\n<p>\r\n\r\n(6)
+        This list of normative references is purely indicative. The only official
+        list of normative reference is the list of the published standard.\r\n</p>\r\n<br>\r\n<p>\r\nIn
+        the case of undated standard, a link to the last dated version is provided.
+        \r\n</p>\r\n<br>\r\n<p>\r\nIn the case of series, a link to each standard
+        identified in the series is provided. \r\n</p>\r\n<br>\r\n<p>\r\nWe also invite
+        you to check (via the website) whether corrigenda and/or amendments shall
+        be read in conjunction with the main standard.\r\n</p>\t\t\t\t\r\n\t\t\t\t\t\t\t\t</div><!--
         end right-pane-->\r\n\t\t\t\t\t\t\t</div><!-- end Structure -->\r\n\t\t\t\t\t\t</div><!--end
         sdashsub3-->\r\n                        <!-- end Structure -->\r\n                        <div
         class=\"clear\"><img src=\"/img/hollowman.gif\" alt=\"&nbsp;\"></div>\r\n
@@ -7074,11 +7066,11 @@ http_interactions:
         name=\"wwv_flow\" id=\"wwvFlowForm\">\n<input type=\"hidden\" name=\"p_flow_id\"
         value=\"205\" id=\"pFlowId\" /><input type=\"hidden\" name=\"p_flow_step_id\"
         value=\"110\" id=\"pFlowStepId\" /><input type=\"hidden\" name=\"p_instance\"
-        value=\"911977413099501\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
-        value=\"1257202418863801\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
+        value=\"981069868327201\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
+        value=\"3063218784669901\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
         name=\"p_request\" value=\"\" id=\"pRequest\" />\r\n\r\n<input type=\"hidden\"
         name=\"p_md5_checksum\" value=\"\"  /><input type=\"hidden\" name=\"p_page_checksum\"
-        value=\"00ACE1AE5A56A2A7A0BDA50A12EC79D5\"  /></form>\r\n\r\n\r\n</HTML><script
+        value=\"042909105B71A458758DB5731D956773\"  /></form>\r\n\r\n\r\n</HTML><script
         type=\"text/javascript\">\napex.da.initDaEventList = function(){\napex.da.gEventList
         = [\n{\"triggeringElement\":\".crossrefpopup\",\"triggeringElementType\":\"JQUERY_SELECTOR\",\"bindType\":\"bind\",\"bindEventType\":\"click\",actionList:[{\"eventResult\":true,\"executeOnPageInit\":false,\"stopExecutionOnError\":true,javascriptFunction:function(){\r\n
         \  if (this.browserEvent !== 'load'){\r\n      apex.jQuery(document).apex_modal_page('openPageFromApexThis',
@@ -7095,5 +7087,5 @@ http_interactions:
         \  \"transition\":\"fade\",\r\n   \"draggable\":true,\r\n   \"initialHeight\":200,\r\n
         \  \"initialWidth\":300,\r\n   \"overlayOpacity\":.2,\r\n   \"scrolling\":true,\r\n
         \  \"loadingImageSrc\":\"\"\r\n});})();\n(function(){apex.da.initDaEventList();})();\n(function(){apex.da.init();})();\n});\r\n//-->\r\n</script></HTML>"
-  recorded_at: Sun, 29 Oct 2023 02:25:53 GMT
+  recorded_at: Sun, 29 Oct 2023 02:32:36 GMT
 recorded_with: VCR 6.2.0

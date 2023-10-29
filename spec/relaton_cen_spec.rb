@@ -42,6 +42,11 @@ RSpec.describe RelatonCen do
     end.to output(/Found: `EN 13306`/).to_stderr
   end
 
+  it "get ENV", vcr: "env_1993_1_1" do
+    bib = RelatonCen::CenBibliography.get "ENV 1613:1995"
+    expect(bib.docidentifier[0].id).to eq "ENV 1613:1995"
+  end
+
   it "keeep year", vcr: "en_13306" do
     expect do
       bib = RelatonCen::CenBibliography.get "EN 13306", nil, keep_year: true
