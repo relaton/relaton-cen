@@ -5,7 +5,7 @@ module RelatonCen
     def initialize # rubocop:disable Lint/MissingSuper
       @short = :relaton_cen
       @prefix = "CEN"
-      @defaultprefix = %r{^(C?EN|ENV)\s}
+      @defaultprefix = %r{^(C?EN|ENV)[\s/]}
       @idtype = "CEN"
     end
 
