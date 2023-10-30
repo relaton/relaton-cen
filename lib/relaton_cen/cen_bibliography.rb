@@ -40,6 +40,7 @@ module RelatonCen
           (?<code>[^:-]+)(?:-(?<part>\d+))?
           (?::(?<year>\d{4}))?
           (?:\+(?<amd>[A-Z]\d+)(?:(?<amy>\d{4}))?)?
+          (?:\/(?<ac>AC\d+:\d{4}))?
         }x.match code
       end
 

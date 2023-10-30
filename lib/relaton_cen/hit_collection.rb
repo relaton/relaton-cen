@@ -56,6 +56,7 @@ module RelatonCen
         s = bp[:year].to_s <=> ap[:year].to_s if s.zero?
         s = ap[:amd].to_s <=> bp[:amd].to_s if s.zero?
         s = ap[:amy].to_s <=> bp[:amy].to_s if s.zero?
+        s = ap[:ac].to_s <=> bp[:ac].to_s if s.zero?
         s
       end
     end
