@@ -57,6 +57,11 @@ RSpec.describe RelatonCen do
     expect(bib.docidentifier[0].id).to eq "HD 1215-2:1988"
   end
 
+  it "get CR", vcr: "cr_12101_5_2000" do
+    bib = RelatonCen::CenBibliography.get "CR 12101-5:2000"
+    expect(bib.docidentifier[0].id).to eq "CR 12101-5:2000"
+  end
+
   it "keeep year", vcr: "en_13306" do
     expect do
       bib = RelatonCen::CenBibliography.get "EN 13306", nil, keep_year: true
