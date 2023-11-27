@@ -1,6 +1,6 @@
 ---
 id: CENISO/TS21003-7-2019
-schema-version: v1.2.4
+schema-version: v1.2.5
 title:
 - type: title-main
   content: Multilayer piping systems for hot and cold water installations inside buildings
@@ -78,7 +78,8 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype: international-standard
+    doctype:
+      type: international-standard
     editorialgroup:
       technical_committee:
       - name: Plastics piping systems and ducting systems
@@ -107,7 +108,8 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype: international-standard
+    doctype:
+      type: international-standard
     editorialgroup:
       technical_committee:
       - name: Plastics piping systems and ducting systems
@@ -136,7 +138,8 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype: international-standard
+    doctype:
+      type: international-standard
     editorialgroup:
       technical_committee:
       - name: Plastics piping systems and ducting systems
@@ -165,7 +168,8 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype: international-standard
+    doctype:
+      type: international-standard
     editorialgroup:
       technical_committee:
       - name: Plastics piping systems and ducting systems
@@ -194,7 +198,8 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype: international-standard
+    doctype:
+      type: international-standard
     editorialgroup:
       technical_committee:
       - name: Plastics piping systems and ducting systems
@@ -223,7 +228,8 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype: international-standard
+    doctype:
+      type: international-standard
     editorialgroup:
       technical_committee:
       - name: Plastics piping systems and ducting systems
@@ -252,7 +258,8 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype: international-standard
+    doctype:
+      type: international-standard
     editorialgroup:
       technical_committee:
       - name: Plastics piping systems and ducting systems
@@ -270,7 +277,8 @@ relation:
 place:
 - London
 fetched: '2021-05-21'
-doctype: international-standard
+doctype:
+  type: international-standard
 editorialgroup:
   technical_committee:
   - name: Plastics piping systems and ducting systems

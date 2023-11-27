@@ -21,7 +21,7 @@ module RelatonCen
           language: ["en"],
           script: ["Latn"],
           title: fetch_titles(doc),
-          doctype: "international-standard",
+          doctype: RelatonBib::DocumentType.new(type: "international-standard"),
           docstatus: fetch_status(doc),
           ics: fetch_ics(doc),
           date: fetch_dates(doc),

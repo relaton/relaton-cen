@@ -12,14 +12,12 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML,
-        like Gecko) Version/9.0.2 Safari/601.3.9
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3_1) AppleWebKit/605.1.15 (KHTML,
+        like Gecko) Version/16.4 Safari/605.1.15
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Accept-Language:
       - en-us,en;q=0.5
-      Host:
-      - standards.cencenelec.eu
       Connection:
       - keep-alive
       Keep-Alive:
@@ -32,7 +30,7 @@ http_interactions:
       Cache-Control:
       - no-cache, no-store, max-age=0, must-revalidate
       Keep-Alive:
-      - timeout=15, max=88
+      - timeout=15, max=71
       Pragma:
       - no-cache
       Content-Type:
@@ -40,11 +38,11 @@ http_interactions:
       Server:
       - '0'
       Set-Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=480139356043801
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=480139356043801
-      - WWV_CUSTOM-F_1752901311939974_205=092DF0E278952AEC067DA716C6EF3787
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=1112919119358301
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=1112919119358301
+      - WWV_CUSTOM-F_1752901311939974_205=A7EE6F37B0CD1494943C2F92AB9C3B5E
       X-Db-Content-Length:
-      - '253699'
+      - '253700'
       X-Powered-By:
       - '0'
       X-Frame-Options:
@@ -54,9 +52,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Tue, 31 Oct 2023 01:00:37 GMT
+      - Thu, 23 Nov 2023 05:35:07 GMT
       Content-Length:
-      - '253699'
+      - '253700'
     body:
       encoding: UTF-8
       string: "<html>\r\n<!-- <head>\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;
@@ -404,8 +402,8 @@ http_interactions:
         name=\"wwv_flow\" id=\"wwvFlowForm\">\n<input type=\"hidden\" name=\"p_flow_id\"
         value=\"205\" id=\"pFlowId\" /><input type=\"hidden\" name=\"p_flow_step_id\"
         value=\"105\" id=\"pFlowStepId\" /><input type=\"hidden\" name=\"p_instance\"
-        value=\"480139356043801\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
-        value=\"297725011513901\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
+        value=\"1112919119358301\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
+        value=\"366402692413501\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
         name=\"p_request\" value=\"\" id=\"pRequest\" />\r\n<div class=\"bodyContainer\">\r\n\t<div
         class=\"container\">\r\n\t\t<div class=\"content-text content-apex\">\r\n\t\t\t<div
         class=\"row\">\r\n\t\t\t\t<div class=\"col-md-12\">\r\n\t\t\t\t\t<!-- APEX
@@ -3067,7 +3065,7 @@ http_interactions:
         end form-thread-bot -->\r\n                                </div>\r\n                            </div>\r\n
         \                           <!-- end sformsub1 -->\r\n\r\n\r\n<input type=\"hidden\"
         name=\"p_md5_checksum\" value=\"\"  /><input type=\"hidden\" name=\"p_page_checksum\"
-        value=\"3B17DDCB5ED5071A3AFEB0DA57E4A15D\"  /></form>\r\n\r\n\r\n\r\n                        <div
+        value=\"E6B9124E80E25FE19A4D701EF2029EA5\"  /></form>\r\n\r\n\r\n\r\n                        <div
         id=\"sformsub2\">\r\n                            <div class=\"dash-top\">\r\n
         \                               <div class=\"dash-subnav\"></div>\r\n                            </div>\r\n
         \                           <div id=\"sdashsub1\">\r\n                                <div
@@ -3201,35 +3199,33 @@ http_interactions:
         = response['redirectUrl'];\r\n                                }\r\n                            }\r\n
         \   </script>\r\n<!-- #EndEditable --> \r\n\r\n</HTML><script type=\"text/javascript\">\r\n<!--
         \r\n\r\n//-->\r\n</script></HTML>"
-  recorded_at: Tue, 31 Oct 2023 01:00:38 GMT
+  recorded_at: Thu, 23 Nov 2023 05:35:08 GMT
 - request:
     method: post
     uri: https://standards.cencenelec.eu/dyn/www/wwv_flow.accept
     body:
       encoding: UTF-8
-      string: p_flow_id=205&p_flow_step_id=105&p_instance=480139356043801&p_page_submission_id=297725011513901&p_request=S1-S2-S3-S4-S5-S6-S7-CEN-CLC-&f20=CEN_CLC_CHOICE&f21=CEN&f21=CLC&f10=KEYWORDS_AND&f11=&f10=LANGUAGE_LIST&f11=0&f10=TC_CODE_LIST&f11=&f10=TC_NAME_LIST&f11=&f10=HEAD_LIST&f11=&f10=STAND_REF&f11=CR+12101-5%3A2000&f10=DIRECTIVES_LIST&f11=&f20=STATUS_CHOICE&f21=S1&f21=S2&f21=S3&f21=S4&f21=S5&f21=S6&f21=S7&f10=ICS_LIST&f11=&f10=SEC_LIST&f11=&f10=SDG_LIST&f11=&p_md5_checksum=&p_page_checksum=3B17DDCB5ED5071A3AFEB0DA57E4A15D
+      string: p_flow_id=205&p_flow_step_id=105&p_instance=1112919119358301&p_page_submission_id=366402692413501&p_request=S1-S2-S3-S4-S5-S6-S7-CEN-CLC-&f20=CEN_CLC_CHOICE&f21=CEN&f21=CLC&f10=KEYWORDS_AND&f11=&f10=LANGUAGE_LIST&f11=0&f10=TC_CODE_LIST&f11=&f10=TC_NAME_LIST&f11=&f10=HEAD_LIST&f11=&f10=STAND_REF&f11=CR+12101-5%3A2000&f10=DIRECTIVES_LIST&f11=&f20=STATUS_CHOICE&f21=S1&f21=S2&f21=S3&f21=S4&f21=S5&f21=S6&f21=S7&f10=ICS_LIST&f11=&f10=SEC_LIST&f11=&f10=SDG_LIST&f11=&p_md5_checksum=&p_page_checksum=E6B9124E80E25FE19A4D701EF2029EA5
     headers:
       Accept-Encoding:
       - gzip,deflate,identity
       Accept:
       - "*/*"
       User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML,
-        like Gecko) Version/9.0.2 Safari/601.3.9
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3_1) AppleWebKit/605.1.15 (KHTML,
+        like Gecko) Version/16.4 Safari/605.1.15
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=480139356043801; WWV_CUSTOM-F_1752901311939974_205=092DF0E278952AEC067DA716C6EF3787
-      Host:
-      - standards.cencenelec.eu
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=1112919119358301; WWV_CUSTOM-F_1752901311939974_205=A7EE6F37B0CD1494943C2F92AB9C3B5E
       Referer:
       - 'https://standards.cencenelec.eu/dyn/www/f?p=205:105:0:::::'
       Content-Type:
       - application/octet-stream
       Content-Length:
-      - '527'
+      - '528'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -3240,7 +3236,7 @@ http_interactions:
       message: Found
     headers:
       Keep-Alive:
-      - timeout=15, max=4
+      - timeout=15, max=75
       Content-Type:
       - text/plain
       Location:
@@ -3258,13 +3254,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Tue, 31 Oct 2023 01:00:37 GMT
+      - Thu, 23 Nov 2023 05:35:07 GMT
       Content-Length:
       - '0'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 31 Oct 2023 01:00:38 GMT
+  recorded_at: Thu, 23 Nov 2023 05:35:08 GMT
 - request:
     method: get
     uri: 'https://standards.cencenelec.eu/dyn/www/f?p=205:105:0:::::'
@@ -3277,16 +3273,14 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML,
-        like Gecko) Version/9.0.2 Safari/601.3.9
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3_1) AppleWebKit/605.1.15 (KHTML,
+        like Gecko) Version/16.4 Safari/605.1.15
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=480139356043801; WWV_CUSTOM-F_1752901311939974_205=092DF0E278952AEC067DA716C6EF3787
-      Host:
-      - standards.cencenelec.eu
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=1112919119358301; WWV_CUSTOM-F_1752901311939974_205=A7EE6F37B0CD1494943C2F92AB9C3B5E
       Referer:
       - 'https://standards.cencenelec.eu/dyn/www/f?p=205:105:0:::::'
       Connection:
@@ -3299,7 +3293,7 @@ http_interactions:
       message: OK
     headers:
       Keep-Alive:
-      - timeout=15, max=92
+      - timeout=15, max=79
       Content-Type:
       - text/html; charset=UTF-8
       Server:
@@ -3315,7 +3309,7 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Tue, 31 Oct 2023 01:00:38 GMT
+      - Thu, 23 Nov 2023 05:35:08 GMT
       Content-Length:
       - '254767'
     body:
@@ -3665,8 +3659,8 @@ http_interactions:
         name=\"wwv_flow\" id=\"wwvFlowForm\">\n<input type=\"hidden\" name=\"p_flow_id\"
         value=\"205\" id=\"pFlowId\" /><input type=\"hidden\" name=\"p_flow_step_id\"
         value=\"105\" id=\"pFlowStepId\" /><input type=\"hidden\" name=\"p_instance\"
-        value=\"480139356043801\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
-        value=\"1074646774115901\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
+        value=\"1112919119358301\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
+        value=\"662928116357401\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
         name=\"p_request\" value=\"\" id=\"pRequest\" />\r\n<div class=\"bodyContainer\">\r\n\t<div
         class=\"container\">\r\n\t\t<div class=\"content-text content-apex\">\r\n\t\t\t<div
         class=\"row\">\r\n\t\t\t\t<div class=\"col-md-12\">\r\n\t\t\t\t\t<!-- APEX
@@ -6332,7 +6326,7 @@ http_interactions:
         end form-thread-bot -->\r\n                                </div>\r\n                            </div>\r\n
         \                           <!-- end sformsub1 -->\r\n\r\n\r\n<input type=\"hidden\"
         name=\"p_md5_checksum\" value=\"\"  /><input type=\"hidden\" name=\"p_page_checksum\"
-        value=\"E1D9EE62E9CEF7055531FBFE331854A2\"  /></form>\r\n\r\n\r\n\r\n                        <div
+        value=\"C049B277D5D63C512ED6140B7E81B045\"  /></form>\r\n\r\n\r\n\r\n                        <div
         id=\"sformsub2\">\r\n                            <div class=\"dash-top\">\r\n
         \                               <div class=\"dash-subnav\"></div>\r\n                            </div>\r\n
         \                           <div id=\"sdashsub1\">\r\n                                <div
@@ -6476,7 +6470,7 @@ http_interactions:
         = response['redirectUrl'];\r\n                                }\r\n                            }\r\n
         \   </script>\r\n<!-- #EndEditable --> \r\n\r\n</HTML><script type=\"text/javascript\">\r\n<!--
         \r\n\r\n//-->\r\n</script></HTML>"
-  recorded_at: Tue, 31 Oct 2023 01:00:39 GMT
+  recorded_at: Thu, 23 Nov 2023 05:35:09 GMT
 - request:
     method: get
     uri: https://standards.cencenelec.eu/dyn/www/f?cs=1A9387794DFF5EF027FAC2FA7B9BAEF39&p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:8709,6172
@@ -6489,16 +6483,14 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML,
-        like Gecko) Version/9.0.2 Safari/601.3.9
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3_1) AppleWebKit/605.1.15 (KHTML,
+        like Gecko) Version/16.4 Safari/605.1.15
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=480139356043801; WWV_CUSTOM-F_1752901311939974_205=092DF0E278952AEC067DA716C6EF3787
-      Host:
-      - standards.cencenelec.eu
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=1112919119358301; WWV_CUSTOM-F_1752901311939974_205=A7EE6F37B0CD1494943C2F92AB9C3B5E
       Referer:
       - 'https://standards.cencenelec.eu/dyn/www/f?p=205:105:0:::::'
       Connection:
@@ -6510,12 +6502,14 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Keep-Alive:
+      - timeout=15, max=79
       Content-Type:
       - text/html; charset=UTF-8
       Server:
       - '0'
       X-Db-Content-Length:
-      - '49732'
+      - '49734'
       X-Powered-By:
       - '0'
       X-Frame-Options:
@@ -6525,9 +6519,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Tue, 31 Oct 2023 01:00:41 GMT
+      - Thu, 23 Nov 2023 05:35:10 GMT
       Content-Length:
-      - '49732'
+      - '49734'
     body:
       encoding: UTF-8
       string: "\n<html>\r\n<!-- <head>\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;
@@ -7069,11 +7063,11 @@ http_interactions:
         name=\"wwv_flow\" id=\"wwvFlowForm\">\n<input type=\"hidden\" name=\"p_flow_id\"
         value=\"205\" id=\"pFlowId\" /><input type=\"hidden\" name=\"p_flow_step_id\"
         value=\"110\" id=\"pFlowStepId\" /><input type=\"hidden\" name=\"p_instance\"
-        value=\"480139356043801\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
-        value=\"402206649592801\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
+        value=\"1112919119358301\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
+        value=\"1254690894471601\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
         name=\"p_request\" value=\"\" id=\"pRequest\" />\r\n\r\n<input type=\"hidden\"
         name=\"p_md5_checksum\" value=\"\"  /><input type=\"hidden\" name=\"p_page_checksum\"
-        value=\"1B1D697E48517B2031879D183B03C219\"  /></form>\r\n\r\n\r\n</HTML><script
+        value=\"7FAD6514984AC7A72B938F82EC6807CB\"  /></form>\r\n\r\n\r\n</HTML><script
         type=\"text/javascript\">\napex.da.initDaEventList = function(){\napex.da.gEventList
         = [\n{\"triggeringElement\":\".crossrefpopup\",\"triggeringElementType\":\"JQUERY_SELECTOR\",\"bindType\":\"bind\",\"bindEventType\":\"click\",actionList:[{\"eventResult\":true,\"executeOnPageInit\":false,\"stopExecutionOnError\":true,javascriptFunction:function(){\r\n
         \  if (this.browserEvent !== 'load'){\r\n      apex.jQuery(document).apex_modal_page('openPageFromApexThis',
@@ -7090,5 +7084,5 @@ http_interactions:
         \  \"transition\":\"fade\",\r\n   \"draggable\":true,\r\n   \"initialHeight\":200,\r\n
         \  \"initialWidth\":300,\r\n   \"overlayOpacity\":.2,\r\n   \"scrolling\":true,\r\n
         \  \"loadingImageSrc\":\"\"\r\n});})();\n(function(){apex.da.initDaEventList();})();\n(function(){apex.da.init();})();\n});\r\n//-->\r\n</script></HTML>"
-  recorded_at: Tue, 31 Oct 2023 01:00:41 GMT
+  recorded_at: Thu, 23 Nov 2023 05:35:10 GMT
 recorded_with: VCR 6.2.0

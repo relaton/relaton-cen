@@ -12,14 +12,12 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML,
-        like Gecko) Version/9.0.2 Safari/601.3.9
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3_1) AppleWebKit/605.1.15 (KHTML,
+        like Gecko) Version/16.4 Safari/605.1.15
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Accept-Language:
       - en-us,en;q=0.5
-      Host:
-      - standards.cencenelec.eu
       Connection:
       - keep-alive
       Keep-Alive:
@@ -32,7 +30,7 @@ http_interactions:
       Cache-Control:
       - no-cache, no-store, max-age=0, must-revalidate
       Keep-Alive:
-      - timeout=15, max=84
+      - timeout=15, max=75
       Pragma:
       - no-cache
       Content-Type:
@@ -40,11 +38,11 @@ http_interactions:
       Server:
       - '0'
       Set-Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=890501090197201
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=890501090197201
-      - WWV_CUSTOM-F_1752901311939974_205=7539A50C85B1E6491B1B42103B61D072
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=1628357366610401
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=1628357366610401
+      - WWV_CUSTOM-F_1752901311939974_205=2D9D8D566934E39C1DDD8EBE57F125A8
       X-Db-Content-Length:
-      - '253550'
+      - '253701'
       X-Powered-By:
       - '0'
       X-Frame-Options:
@@ -54,9 +52,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Sun, 29 Oct 2023 02:26:01 GMT
+      - Thu, 23 Nov 2023 05:35:15 GMT
       Content-Length:
-      - '253550'
+      - '253701'
     body:
       encoding: UTF-8
       string: "<html>\r\n<!-- <head>\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;
@@ -404,8 +402,8 @@ http_interactions:
         name=\"wwv_flow\" id=\"wwvFlowForm\">\n<input type=\"hidden\" name=\"p_flow_id\"
         value=\"205\" id=\"pFlowId\" /><input type=\"hidden\" name=\"p_flow_step_id\"
         value=\"105\" id=\"pFlowStepId\" /><input type=\"hidden\" name=\"p_instance\"
-        value=\"890501090197201\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
-        value=\"911806802424901\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
+        value=\"1628357366610401\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
+        value=\"1143765414663901\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
         name=\"p_request\" value=\"\" id=\"pRequest\" />\r\n<div class=\"bodyContainer\">\r\n\t<div
         class=\"container\">\r\n\t\t<div class=\"content-text content-apex\">\r\n\t\t\t<div
         class=\"row\">\r\n\t\t\t\t<div class=\"col-md-12\">\r\n\t\t\t\t\t<!-- APEX
@@ -778,44 +776,45 @@ http_interactions:
         value=\"2878378\" >CEN/TC 468</option><option value=\"2934264\" >CEN/TC 469</option><option
         value=\"3102473\" >CEN/TC 470</option><option value=\"3222426\" >CEN/TC 471</option><option
         value=\"3307816\" >CEN/TC 472</option><option value=\"3326686\" >CEN/TC 473</option><option
-        value=\"3091056\" >CEN/WS DTS</option><option value=\"3141871\" >CEN/WS DHI</option><option
-        value=\"3090334\" >CEN/WS RDA</option><option value=\"3100916\" >CEN/WS CBRN</option><option
-        value=\"3100836\" >CEN/WS CROP</option><option value=\"3092737\" >CEN/WS IPCI</option><option
-        value=\"3233596\" >CEN/WS CSBIM</option><option value=\"3082725\" >CEN/WS
-        IICDM</option><option value=\"3094210\" >CEN/WS GEOFIT</option><option value=\"3187208\"
-        >CEN/WS 116</option><option value=\"835883\" >CEN/WS 063</option><option value=\"841272\"
-        >CEN/WS 064 Phase 1</option><option value=\"1309192\" >CEN/WS 064 Phase 2</option><option
-        value=\"2582478\" >CEN/WS 064 Phase 3</option><option value=\"888433\" >CEN/WS
-        066</option><option value=\"916155\" >CEN/WS 068</option><option value=\"997513\"
-        >CEN/WS 069</option><option value=\"1168897\" >CEN/WS 071</option><option
-        value=\"1168891\" >CEN/WS 073</option><option value=\"1927068\" >CEN/WS 076</option><option
-        value=\"2001139\" >CEN/WS 079</option><option value=\"2078399\" >CEN/WS 082</option><option
-        value=\"2108918\" >CEN/WS 083</option><option value=\"2136045\" >CEN/WS 084</option><option
-        value=\"2273736\" >CEN/WS 086</option><option value=\"2329328\" >CEN/WS 089</option><option
-        value=\"2370457\" >CEN/WS 090</option><option value=\"2412012\" >CEN/WS 093</option><option
-        value=\"2476359\" >CEN/WS 095</option><option value=\"2503644\" >CEN/WS 096</option><option
-        value=\"2547561\" >CEN/WS 097</option><option value=\"2609852\" >CEN/WS 098</option><option
-        value=\"2625693\" >CEN/WS 099</option><option value=\"2625694\" >CEN/WS 100</option><option
-        value=\"2625696\" >CEN/WS 101</option><option value=\"2650669\" >CEN/WS 102</option><option
-        value=\"2654151\" >CEN/WS 103</option><option value=\"2655640\" >CEN/WS 104</option><option
-        value=\"2664646\" >CEN/WS 105</option><option value=\"2731360\" >CEN/WS 106</option><option
-        value=\"2773181\" >CEN/WS 107</option><option value=\"2785512\" >CEN/WS 108</option><option
-        value=\"2787904\" >CEN/WS 109</option><option value=\"2803229\" >CEN/WS 110</option><option
-        value=\"2869238\" >CEN/WS 113</option><option value=\"3016314\" >CEN/WS 115</option><option
-        value=\"3223348\" >CEN/WS 117</option><option value=\"3235264\" >CEN/WS 118</option><option
-        value=\"3187918\" >CEN/WS BIZEOLCAT</option><option value=\"2628728\" >CEN/WS
-        BRESAER</option><option value=\"3059518\" >CEN/WS CER</option><option value=\"2796029\"
-        >CEN/WS CFCM</option><option value=\"2238989\" >CEN/WS CORE</option><option
-        value=\"2031878\" >CEN/WS D-Box</option><option value=\"3077042\" >CEN/WS
-        DIV</option><option value=\"3274767\" >CEN/WS TDT</option><option value=\"3057055\"
-        >CEN/WS ERP</option><option value=\"2566488\" >CEN/WS Energy Retrofit</option><option
-        value=\"3334885\" >CEN/WS FAT4LI</option><option value=\"2091051\" >CEN/WS
-        FATEDA</option><option value=\"2890900\" >CEN/WS FSR</option><option value=\"3320353\"
-        >CEN/WS GAR</option><option value=\"412798\" >CEN/WS ICT</option><option value=\"2581441\"
-        >CEN/WS IHAN</option><option value=\"2459281\" >CEN/WS JTI</option><option
-        value=\"19375\" >CEN/WS JXF</option><option value=\"2209642\" >CEN/WS METEDA</option><option
-        value=\"2301711\" >CEN/WS MODA</option><option value=\"2539951\" >CEN/WS NATEDA</option><option
-        value=\"2862830\" >CEN/WS OYS</option><option value=\"2566480\" >CEN/WS SCS</option><option
+        value=\"3356655\" >CEN/TC 474</option><option value=\"3091056\" >CEN/WS DTS</option><option
+        value=\"3141871\" >CEN/WS DHI</option><option value=\"3090334\" >CEN/WS RDA</option><option
+        value=\"3100916\" >CEN/WS CBRN</option><option value=\"3100836\" >CEN/WS CROP</option><option
+        value=\"3092737\" >CEN/WS IPCI</option><option value=\"3233596\" >CEN/WS CSBIM</option><option
+        value=\"3082725\" >CEN/WS IICDM</option><option value=\"3094210\" >CEN/WS
+        GEOFIT</option><option value=\"3187208\" >CEN/WS 116</option><option value=\"835883\"
+        >CEN/WS 063</option><option value=\"841272\" >CEN/WS 064 Phase 1</option><option
+        value=\"1309192\" >CEN/WS 064 Phase 2</option><option value=\"2582478\" >CEN/WS
+        064 Phase 3</option><option value=\"888433\" >CEN/WS 066</option><option value=\"916155\"
+        >CEN/WS 068</option><option value=\"997513\" >CEN/WS 069</option><option value=\"1168897\"
+        >CEN/WS 071</option><option value=\"1168891\" >CEN/WS 073</option><option
+        value=\"1927068\" >CEN/WS 076</option><option value=\"2001139\" >CEN/WS 079</option><option
+        value=\"2078399\" >CEN/WS 082</option><option value=\"2108918\" >CEN/WS 083</option><option
+        value=\"2136045\" >CEN/WS 084</option><option value=\"2273736\" >CEN/WS 086</option><option
+        value=\"2329328\" >CEN/WS 089</option><option value=\"2370457\" >CEN/WS 090</option><option
+        value=\"2412012\" >CEN/WS 093</option><option value=\"2476359\" >CEN/WS 095</option><option
+        value=\"2503644\" >CEN/WS 096</option><option value=\"2547561\" >CEN/WS 097</option><option
+        value=\"2609852\" >CEN/WS 098</option><option value=\"2625693\" >CEN/WS 099</option><option
+        value=\"2625694\" >CEN/WS 100</option><option value=\"2625696\" >CEN/WS 101</option><option
+        value=\"2650669\" >CEN/WS 102</option><option value=\"2654151\" >CEN/WS 103</option><option
+        value=\"2655640\" >CEN/WS 104</option><option value=\"2664646\" >CEN/WS 105</option><option
+        value=\"2731360\" >CEN/WS 106</option><option value=\"2773181\" >CEN/WS 107</option><option
+        value=\"2785512\" >CEN/WS 108</option><option value=\"2787904\" >CEN/WS 109</option><option
+        value=\"2803229\" >CEN/WS 110</option><option value=\"2869238\" >CEN/WS 113</option><option
+        value=\"3016314\" >CEN/WS 115</option><option value=\"3223348\" >CEN/WS 117</option><option
+        value=\"3235264\" >CEN/WS 118</option><option value=\"3187918\" >CEN/WS BIZEOLCAT</option><option
+        value=\"2628728\" >CEN/WS BRESAER</option><option value=\"3059518\" >CEN/WS
+        CER</option><option value=\"2796029\" >CEN/WS CFCM</option><option value=\"2238989\"
+        >CEN/WS CORE</option><option value=\"2031878\" >CEN/WS D-Box</option><option
+        value=\"3077042\" >CEN/WS DIV</option><option value=\"3274767\" >CEN/WS TDT</option><option
+        value=\"3057055\" >CEN/WS ERP</option><option value=\"2566488\" >CEN/WS Energy
+        Retrofit</option><option value=\"3334885\" >CEN/WS FAT4LI</option><option
+        value=\"2091051\" >CEN/WS FATEDA</option><option value=\"2890900\" >CEN/WS
+        FSR</option><option value=\"3320353\" >CEN/WS GAR</option><option value=\"412798\"
+        >CEN/WS ICT</option><option value=\"2581441\" >CEN/WS IHAN</option><option
+        value=\"2459281\" >CEN/WS JTI</option><option value=\"19375\" >CEN/WS JXF</option><option
+        value=\"2209642\" >CEN/WS METEDA</option><option value=\"2301711\" >CEN/WS
+        MODA</option><option value=\"2539951\" >CEN/WS NATEDA</option><option value=\"2862830\"
+        >CEN/WS OYS</option><option value=\"2566480\" >CEN/WS SCS</option><option
         value=\"3063037\" >CEN/WS SNF</option><option value=\"2087449\" >CEN/WS SUSTINROADS</option><option
         value=\"2390021\" >CEN/WS Smart-CE-Marking</option><option value=\"2266085\"
         >CEN/WS TER-CDM</option><option value=\"2524192\" >CEN/WS Unicorn</option><option
@@ -934,55 +933,57 @@ http_interactions:
         value=\"3189220\" >CEN/WS Design methodology of advanced Human-Robot Collaborative
         cells in personalized Human-Robot Collaborations (SHAREWORK).</option><option
         value=\"1927073\" >CENELEC workshop on Specifications for Graphene Related
-        Material</option><option value=\"1957731\" >Cabin Air Quality on civil aircraft
-        - Chemical Agents</option><option value=\"1258293\" >Cable management systems</option><option
-        value=\"1258287\" >Cable networks for television signals, sound signals and
-        interactive services</option><option value=\"628906\" >Candle fire safety</option><option
-        value=\"1258385\" >Capacitors and EMI suppression components</option><option
-        value=\"1258003\" >Capacitors and resistors for electronic equipment</option><option
-        value=\"997513\" >Car-Adaptations for Drivers and Passengers of Motor Vehicles</option><option
-        value=\"6194\" >Cartridge operated hand-held tools - Safety</option><option
-        value=\"6184\" >Cast iron pipes, fittings and their joints</option><option
-        value=\"6200\" >Cathodic protection</option><option value=\"6035\" >Cement
-        and building limes</option><option value=\"6041\" >Central heating boilers</option><option
-        value=\"6091\" >Central heating boilers using gaseous fuels</option><option
-        value=\"6294\" >Centrifuges </option><option value=\"6050\" >Ceramic tiles</option><option
-        value=\"400858\" >Cereal and cereal products</option><option value=\"6149\"
-        >Chains, ropes, webbing, slings and accessories - Safety</option><option value=\"6289\"
-        >Characterization and management of sludge</option><option value=\"3158075\"
-        >Characterization of a hybrid heat pump module</option><option value=\"6197\"
-        >Chemical disinfectants and antiseptics</option><option value=\"694302\" >Child
-        Protective Products</option><option value=\"6233\" >Child care articles</option><option
-        value=\"6147\" >Chimneys</option><option value=\"1257221\" >Circuit breakers
-        and similar devices for household and similar applications</option><option
-        value=\"3326686\" >Circular Economy</option><option value=\"3236015\" >Circularity
-        Protocols for extending the useful Life of Large Industrial Equipment</option><option
-        value=\"2847769\" >Circularity and recyclability of fishing gear and aquaculture
-        equipment.</option><option value=\"2944511\" >City Resilience Development
-        - Framework and guidance for implementation in historic areas</option><option
-        value=\"3039427\" >Civil works</option><option value=\"888433\" >Clean harbours
-        - Best practices</option><option value=\"6176\" >Cleaning equipment for air
-        and other gases</option><option value=\"6224\" >Cleanroom technology</option><option
-        value=\"2878377\" >Climate Change</option><option value=\"3236408\" >Closures
-        for optical distribution points - Outdoor - Aerial l</option><option value=\"734450\"
-        >Coated and uncoated flat products to be used for cold forming</option><option
-        value=\"622705\" >Coating systems for chemical apparatus and plants against
-        corrosion</option><option value=\"1258805\" >Coaxial cables</option><option
-        value=\"3059518\" >Collaborative emergency response - Common addressing format
-        and emergency identification protocol</option><option value=\"6028\" >Commercial
-        and Professional Refrigerating Appliances and Systems, Performance and Energy
-        Consumption</option><option value=\"3078518\" >Common modifications to EN
-        IEC 61439-1:2021 and EN IEC 61439-2:2021</option><option value=\"2978416\"
-        >Communication Technologies and Architectures</option><option value=\"1257241\"
-        >Communication cables</option><option value=\"6275\" >Communication systems
-        for meters</option><option value=\"1258773\" >Communication, signalling and
-        processing systems</option><option value=\"1258089\" >Components for low-voltage
-        surge protection</option><option value=\"6213\" >Compressors, vacuum pumps
-        and their systems</option><option value=\"6087\" >Concrete and related products</option><option
-        value=\"734439\" >Concrete reinforcing and prestressing steels</option><option
-        value=\"411453\" >Conservation of Cultural Heritage</option><option value=\"510793\"
-        >Construction Products - Assessment of release of dangerous substances</option><option
-        value=\"6133\" >Construction equipment and building material machines - Safety</option><option
+        Material</option><option value=\"3356655\" >CO2 capture, transportation, utilization,
+        storage and carbon accounting</option><option value=\"1957731\" >Cabin Air
+        Quality on civil aircraft - Chemical Agents</option><option value=\"1258293\"
+        >Cable management systems</option><option value=\"1258287\" >Cable networks
+        for television signals, sound signals and interactive services</option><option
+        value=\"628906\" >Candle fire safety</option><option value=\"1258385\" >Capacitors
+        and EMI suppression components</option><option value=\"1258003\" >Capacitors
+        and resistors for electronic equipment</option><option value=\"997513\" >Car-Adaptations
+        for Drivers and Passengers of Motor Vehicles</option><option value=\"6194\"
+        >Cartridge operated hand-held tools - Safety</option><option value=\"6184\"
+        >Cast iron pipes, fittings and their joints</option><option value=\"6200\"
+        >Cathodic protection</option><option value=\"6035\" >Cement and building limes</option><option
+        value=\"6041\" >Central heating boilers</option><option value=\"6091\" >Central
+        heating boilers using gaseous fuels</option><option value=\"6294\" >Centrifuges
+        </option><option value=\"6050\" >Ceramic tiles</option><option value=\"400858\"
+        >Cereal and cereal products</option><option value=\"6149\" >Chains, ropes,
+        webbing, slings and accessories - Safety</option><option value=\"6289\" >Characterization
+        and management of sludge</option><option value=\"3158075\" >Characterization
+        of a hybrid heat pump module</option><option value=\"6197\" >Chemical disinfectants
+        and antiseptics</option><option value=\"694302\" >Child Protective Products</option><option
+        value=\"6233\" >Child care articles</option><option value=\"6147\" >Chimneys</option><option
+        value=\"1257221\" >Circuit breakers and similar devices for household and
+        similar applications</option><option value=\"3326686\" >Circular Economy</option><option
+        value=\"3236015\" >Circularity Protocols for extending the useful Life of
+        Large Industrial Equipment</option><option value=\"2847769\" >Circularity
+        and recyclability of fishing gear and aquaculture equipment.</option><option
+        value=\"2944511\" >City Resilience Development - Framework and guidance for
+        implementation in historic areas</option><option value=\"3039427\" >Civil
+        works</option><option value=\"888433\" >Clean harbours - Best practices</option><option
+        value=\"6176\" >Cleaning equipment for air and other gases</option><option
+        value=\"6224\" >Cleanroom technology</option><option value=\"2878377\" >Climate
+        Change</option><option value=\"3236408\" >Closures for optical distribution
+        points - Outdoor - Aerial l</option><option value=\"734450\" >Coated and uncoated
+        flat products to be used for cold forming</option><option value=\"622705\"
+        >Coating systems for chemical apparatus and plants against corrosion</option><option
+        value=\"1258805\" >Coaxial cables</option><option value=\"3059518\" >Collaborative
+        emergency response - Common addressing format and emergency identification
+        protocol</option><option value=\"6028\" >Commercial and Professional Refrigerating
+        Appliances and Systems, Performance and Energy Consumption</option><option
+        value=\"3078518\" >Common modifications to EN IEC 61439-1:2021 and EN IEC
+        61439-2:2021</option><option value=\"2978416\" >Communication Technologies
+        and Architectures</option><option value=\"1257241\" >Communication cables</option><option
+        value=\"6275\" >Communication systems for meters</option><option value=\"1258773\"
+        >Communication, signalling and processing systems</option><option value=\"1258089\"
+        >Components for low-voltage surge protection</option><option value=\"6213\"
+        >Compressors, vacuum pumps and their systems</option><option value=\"6087\"
+        >Concrete and related products</option><option value=\"734439\" >Concrete
+        reinforcing and prestressing steels</option><option value=\"411453\" >Conservation
+        of Cultural Heritage</option><option value=\"510793\" >Construction Products
+        - Assessment of release of dangerous substances</option><option value=\"6133\"
+        >Construction equipment and building material machines - Safety</option><option
         value=\"6130\" >Continuous handling equipment and systems - Safety</option><option
         value=\"6169\" >Conveyor belts</option><option value=\"6115\" >Copper and
         copper alloys</option><option value=\"679535\" >Cosmetics</option><option
@@ -3064,7 +3065,7 @@ http_interactions:
         end form-thread-bot -->\r\n                                </div>\r\n                            </div>\r\n
         \                           <!-- end sformsub1 -->\r\n\r\n\r\n<input type=\"hidden\"
         name=\"p_md5_checksum\" value=\"\"  /><input type=\"hidden\" name=\"p_page_checksum\"
-        value=\"B12E732CADD5A75A6BC1055B5D345046\"  /></form>\r\n\r\n\r\n\r\n                        <div
+        value=\"74AE0A16F6ADFC2E3A86B42C63F91146\"  /></form>\r\n\r\n\r\n\r\n                        <div
         id=\"sformsub2\">\r\n                            <div class=\"dash-top\">\r\n
         \                               <div class=\"dash-subnav\"></div>\r\n                            </div>\r\n
         \                           <div id=\"sdashsub1\">\r\n                                <div
@@ -3198,35 +3199,33 @@ http_interactions:
         = response['redirectUrl'];\r\n                                }\r\n                            }\r\n
         \   </script>\r\n<!-- #EndEditable --> \r\n\r\n</HTML><script type=\"text/javascript\">\r\n<!--
         \r\n\r\n//-->\r\n</script></HTML>"
-  recorded_at: Sun, 29 Oct 2023 02:26:02 GMT
+  recorded_at: Thu, 23 Nov 2023 05:35:16 GMT
 - request:
     method: post
     uri: https://standards.cencenelec.eu/dyn/www/wwv_flow.accept
     body:
       encoding: UTF-8
-      string: p_flow_id=205&p_flow_step_id=105&p_instance=890501090197201&p_page_submission_id=911806802424901&p_request=S1-S2-S3-S4-S5-S6-S7-CEN-CLC-&f20=CEN_CLC_CHOICE&f21=CEN&f21=CLC&f10=KEYWORDS_AND&f11=&f10=LANGUAGE_LIST&f11=0&f10=TC_CODE_LIST&f11=&f10=TC_NAME_LIST&f11=&f10=HEAD_LIST&f11=&f10=STAND_REF&f11=EN+1325&f10=DIRECTIVES_LIST&f11=&f20=STATUS_CHOICE&f21=S1&f21=S2&f21=S3&f21=S4&f21=S5&f21=S6&f21=S7&f10=ICS_LIST&f11=&f10=SEC_LIST&f11=&f10=SDG_LIST&f11=&p_md5_checksum=&p_page_checksum=B12E732CADD5A75A6BC1055B5D345046
+      string: p_flow_id=205&p_flow_step_id=105&p_instance=1628357366610401&p_page_submission_id=1143765414663901&p_request=S1-S2-S3-S4-S5-S6-S7-CEN-CLC-&f20=CEN_CLC_CHOICE&f21=CEN&f21=CLC&f10=KEYWORDS_AND&f11=&f10=LANGUAGE_LIST&f11=0&f10=TC_CODE_LIST&f11=&f10=TC_NAME_LIST&f11=&f10=HEAD_LIST&f11=&f10=STAND_REF&f11=EN+1325&f10=DIRECTIVES_LIST&f11=&f20=STATUS_CHOICE&f21=S1&f21=S2&f21=S3&f21=S4&f21=S5&f21=S6&f21=S7&f10=ICS_LIST&f11=&f10=SEC_LIST&f11=&f10=SDG_LIST&f11=&p_md5_checksum=&p_page_checksum=74AE0A16F6ADFC2E3A86B42C63F91146
     headers:
       Accept-Encoding:
       - gzip,deflate,identity
       Accept:
       - "*/*"
       User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML,
-        like Gecko) Version/9.0.2 Safari/601.3.9
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3_1) AppleWebKit/605.1.15 (KHTML,
+        like Gecko) Version/16.4 Safari/605.1.15
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=890501090197201; WWV_CUSTOM-F_1752901311939974_205=7539A50C85B1E6491B1B42103B61D072
-      Host:
-      - standards.cencenelec.eu
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=1628357366610401; WWV_CUSTOM-F_1752901311939974_205=2D9D8D566934E39C1DDD8EBE57F125A8
       Referer:
       - 'https://standards.cencenelec.eu/dyn/www/f?p=205:105:0:::::'
       Content-Type:
       - application/octet-stream
       Content-Length:
-      - '517'
+      - '519'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -3237,7 +3236,7 @@ http_interactions:
       message: Found
     headers:
       Keep-Alive:
-      - timeout=15, max=83
+      - timeout=15, max=81
       Content-Type:
       - text/plain
       Location:
@@ -3255,13 +3254,13 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Sun, 29 Oct 2023 02:26:02 GMT
+      - Thu, 23 Nov 2023 05:35:15 GMT
       Content-Length:
       - '0'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sun, 29 Oct 2023 02:26:02 GMT
+  recorded_at: Thu, 23 Nov 2023 05:35:16 GMT
 - request:
     method: get
     uri: 'https://standards.cencenelec.eu/dyn/www/f?p=205:105:0:::::'
@@ -3274,16 +3273,14 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML,
-        like Gecko) Version/9.0.2 Safari/601.3.9
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3_1) AppleWebKit/605.1.15 (KHTML,
+        like Gecko) Version/16.4 Safari/605.1.15
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=890501090197201; WWV_CUSTOM-F_1752901311939974_205=7539A50C85B1E6491B1B42103B61D072
-      Host:
-      - standards.cencenelec.eu
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=1628357366610401; WWV_CUSTOM-F_1752901311939974_205=2D9D8D566934E39C1DDD8EBE57F125A8
       Referer:
       - 'https://standards.cencenelec.eu/dyn/www/f?p=205:105:0:::::'
       Connection:
@@ -3296,7 +3293,7 @@ http_interactions:
       message: OK
     headers:
       Keep-Alive:
-      - timeout=15, max=82
+      - timeout=15, max=98
       Transfer-Encoding:
       - chunked
       Content-Type:
@@ -3304,7 +3301,7 @@ http_interactions:
       Server:
       - '0'
       X-Db-Content-Length:
-      - '277256'
+      - '277406'
       X-Powered-By:
       - '0'
       X-Frame-Options:
@@ -3314,7 +3311,7 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Sun, 29 Oct 2023 02:26:02 GMT
+      - Thu, 23 Nov 2023 05:35:16 GMT
     body:
       encoding: UTF-8
       string: "\n<html>\r\n<!-- <head>\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;
@@ -3662,8 +3659,8 @@ http_interactions:
         name=\"wwv_flow\" id=\"wwvFlowForm\">\n<input type=\"hidden\" name=\"p_flow_id\"
         value=\"205\" id=\"pFlowId\" /><input type=\"hidden\" name=\"p_flow_step_id\"
         value=\"105\" id=\"pFlowStepId\" /><input type=\"hidden\" name=\"p_instance\"
-        value=\"890501090197201\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
-        value=\"1224887594135601\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
+        value=\"1628357366610401\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
+        value=\"1365127799645401\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
         name=\"p_request\" value=\"\" id=\"pRequest\" />\r\n<div class=\"bodyContainer\">\r\n\t<div
         class=\"container\">\r\n\t\t<div class=\"content-text content-apex\">\r\n\t\t\t<div
         class=\"row\">\r\n\t\t\t\t<div class=\"col-md-12\">\r\n\t\t\t\t\t<!-- APEX
@@ -4037,44 +4034,45 @@ http_interactions:
         value=\"2878378\" >CEN/TC 468</option><option value=\"2934264\" >CEN/TC 469</option><option
         value=\"3102473\" >CEN/TC 470</option><option value=\"3222426\" >CEN/TC 471</option><option
         value=\"3307816\" >CEN/TC 472</option><option value=\"3326686\" >CEN/TC 473</option><option
-        value=\"3091056\" >CEN/WS DTS</option><option value=\"3141871\" >CEN/WS DHI</option><option
-        value=\"3090334\" >CEN/WS RDA</option><option value=\"3100916\" >CEN/WS CBRN</option><option
-        value=\"3100836\" >CEN/WS CROP</option><option value=\"3092737\" >CEN/WS IPCI</option><option
-        value=\"3233596\" >CEN/WS CSBIM</option><option value=\"3082725\" >CEN/WS
-        IICDM</option><option value=\"3094210\" >CEN/WS GEOFIT</option><option value=\"3187208\"
-        >CEN/WS 116</option><option value=\"835883\" >CEN/WS 063</option><option value=\"841272\"
-        >CEN/WS 064 Phase 1</option><option value=\"1309192\" >CEN/WS 064 Phase 2</option><option
-        value=\"2582478\" >CEN/WS 064 Phase 3</option><option value=\"888433\" >CEN/WS
-        066</option><option value=\"916155\" >CEN/WS 068</option><option value=\"997513\"
-        >CEN/WS 069</option><option value=\"1168897\" >CEN/WS 071</option><option
-        value=\"1168891\" >CEN/WS 073</option><option value=\"1927068\" >CEN/WS 076</option><option
-        value=\"2001139\" >CEN/WS 079</option><option value=\"2078399\" >CEN/WS 082</option><option
-        value=\"2108918\" >CEN/WS 083</option><option value=\"2136045\" >CEN/WS 084</option><option
-        value=\"2273736\" >CEN/WS 086</option><option value=\"2329328\" >CEN/WS 089</option><option
-        value=\"2370457\" >CEN/WS 090</option><option value=\"2412012\" >CEN/WS 093</option><option
-        value=\"2476359\" >CEN/WS 095</option><option value=\"2503644\" >CEN/WS 096</option><option
-        value=\"2547561\" >CEN/WS 097</option><option value=\"2609852\" >CEN/WS 098</option><option
-        value=\"2625693\" >CEN/WS 099</option><option value=\"2625694\" >CEN/WS 100</option><option
-        value=\"2625696\" >CEN/WS 101</option><option value=\"2650669\" >CEN/WS 102</option><option
-        value=\"2654151\" >CEN/WS 103</option><option value=\"2655640\" >CEN/WS 104</option><option
-        value=\"2664646\" >CEN/WS 105</option><option value=\"2731360\" >CEN/WS 106</option><option
-        value=\"2773181\" >CEN/WS 107</option><option value=\"2785512\" >CEN/WS 108</option><option
-        value=\"2787904\" >CEN/WS 109</option><option value=\"2803229\" >CEN/WS 110</option><option
-        value=\"2869238\" >CEN/WS 113</option><option value=\"3016314\" >CEN/WS 115</option><option
-        value=\"3223348\" >CEN/WS 117</option><option value=\"3235264\" >CEN/WS 118</option><option
-        value=\"3187918\" >CEN/WS BIZEOLCAT</option><option value=\"2628728\" >CEN/WS
-        BRESAER</option><option value=\"3059518\" >CEN/WS CER</option><option value=\"2796029\"
-        >CEN/WS CFCM</option><option value=\"2238989\" >CEN/WS CORE</option><option
-        value=\"2031878\" >CEN/WS D-Box</option><option value=\"3077042\" >CEN/WS
-        DIV</option><option value=\"3274767\" >CEN/WS TDT</option><option value=\"3057055\"
-        >CEN/WS ERP</option><option value=\"2566488\" >CEN/WS Energy Retrofit</option><option
-        value=\"3334885\" >CEN/WS FAT4LI</option><option value=\"2091051\" >CEN/WS
-        FATEDA</option><option value=\"2890900\" >CEN/WS FSR</option><option value=\"3320353\"
-        >CEN/WS GAR</option><option value=\"412798\" >CEN/WS ICT</option><option value=\"2581441\"
-        >CEN/WS IHAN</option><option value=\"2459281\" >CEN/WS JTI</option><option
-        value=\"19375\" >CEN/WS JXF</option><option value=\"2209642\" >CEN/WS METEDA</option><option
-        value=\"2301711\" >CEN/WS MODA</option><option value=\"2539951\" >CEN/WS NATEDA</option><option
-        value=\"2862830\" >CEN/WS OYS</option><option value=\"2566480\" >CEN/WS SCS</option><option
+        value=\"3356655\" >CEN/TC 474</option><option value=\"3091056\" >CEN/WS DTS</option><option
+        value=\"3141871\" >CEN/WS DHI</option><option value=\"3090334\" >CEN/WS RDA</option><option
+        value=\"3100916\" >CEN/WS CBRN</option><option value=\"3100836\" >CEN/WS CROP</option><option
+        value=\"3092737\" >CEN/WS IPCI</option><option value=\"3233596\" >CEN/WS CSBIM</option><option
+        value=\"3082725\" >CEN/WS IICDM</option><option value=\"3094210\" >CEN/WS
+        GEOFIT</option><option value=\"3187208\" >CEN/WS 116</option><option value=\"835883\"
+        >CEN/WS 063</option><option value=\"841272\" >CEN/WS 064 Phase 1</option><option
+        value=\"1309192\" >CEN/WS 064 Phase 2</option><option value=\"2582478\" >CEN/WS
+        064 Phase 3</option><option value=\"888433\" >CEN/WS 066</option><option value=\"916155\"
+        >CEN/WS 068</option><option value=\"997513\" >CEN/WS 069</option><option value=\"1168897\"
+        >CEN/WS 071</option><option value=\"1168891\" >CEN/WS 073</option><option
+        value=\"1927068\" >CEN/WS 076</option><option value=\"2001139\" >CEN/WS 079</option><option
+        value=\"2078399\" >CEN/WS 082</option><option value=\"2108918\" >CEN/WS 083</option><option
+        value=\"2136045\" >CEN/WS 084</option><option value=\"2273736\" >CEN/WS 086</option><option
+        value=\"2329328\" >CEN/WS 089</option><option value=\"2370457\" >CEN/WS 090</option><option
+        value=\"2412012\" >CEN/WS 093</option><option value=\"2476359\" >CEN/WS 095</option><option
+        value=\"2503644\" >CEN/WS 096</option><option value=\"2547561\" >CEN/WS 097</option><option
+        value=\"2609852\" >CEN/WS 098</option><option value=\"2625693\" >CEN/WS 099</option><option
+        value=\"2625694\" >CEN/WS 100</option><option value=\"2625696\" >CEN/WS 101</option><option
+        value=\"2650669\" >CEN/WS 102</option><option value=\"2654151\" >CEN/WS 103</option><option
+        value=\"2655640\" >CEN/WS 104</option><option value=\"2664646\" >CEN/WS 105</option><option
+        value=\"2731360\" >CEN/WS 106</option><option value=\"2773181\" >CEN/WS 107</option><option
+        value=\"2785512\" >CEN/WS 108</option><option value=\"2787904\" >CEN/WS 109</option><option
+        value=\"2803229\" >CEN/WS 110</option><option value=\"2869238\" >CEN/WS 113</option><option
+        value=\"3016314\" >CEN/WS 115</option><option value=\"3223348\" >CEN/WS 117</option><option
+        value=\"3235264\" >CEN/WS 118</option><option value=\"3187918\" >CEN/WS BIZEOLCAT</option><option
+        value=\"2628728\" >CEN/WS BRESAER</option><option value=\"3059518\" >CEN/WS
+        CER</option><option value=\"2796029\" >CEN/WS CFCM</option><option value=\"2238989\"
+        >CEN/WS CORE</option><option value=\"2031878\" >CEN/WS D-Box</option><option
+        value=\"3077042\" >CEN/WS DIV</option><option value=\"3274767\" >CEN/WS TDT</option><option
+        value=\"3057055\" >CEN/WS ERP</option><option value=\"2566488\" >CEN/WS Energy
+        Retrofit</option><option value=\"3334885\" >CEN/WS FAT4LI</option><option
+        value=\"2091051\" >CEN/WS FATEDA</option><option value=\"2890900\" >CEN/WS
+        FSR</option><option value=\"3320353\" >CEN/WS GAR</option><option value=\"412798\"
+        >CEN/WS ICT</option><option value=\"2581441\" >CEN/WS IHAN</option><option
+        value=\"2459281\" >CEN/WS JTI</option><option value=\"19375\" >CEN/WS JXF</option><option
+        value=\"2209642\" >CEN/WS METEDA</option><option value=\"2301711\" >CEN/WS
+        MODA</option><option value=\"2539951\" >CEN/WS NATEDA</option><option value=\"2862830\"
+        >CEN/WS OYS</option><option value=\"2566480\" >CEN/WS SCS</option><option
         value=\"3063037\" >CEN/WS SNF</option><option value=\"2087449\" >CEN/WS SUSTINROADS</option><option
         value=\"2390021\" >CEN/WS Smart-CE-Marking</option><option value=\"2266085\"
         >CEN/WS TER-CDM</option><option value=\"2524192\" >CEN/WS Unicorn</option><option
@@ -4193,55 +4191,57 @@ http_interactions:
         value=\"3189220\" >CEN/WS Design methodology of advanced Human-Robot Collaborative
         cells in personalized Human-Robot Collaborations (SHAREWORK).</option><option
         value=\"1927073\" >CENELEC workshop on Specifications for Graphene Related
-        Material</option><option value=\"1957731\" >Cabin Air Quality on civil aircraft
-        - Chemical Agents</option><option value=\"1258293\" >Cable management systems</option><option
-        value=\"1258287\" >Cable networks for television signals, sound signals and
-        interactive services</option><option value=\"628906\" >Candle fire safety</option><option
-        value=\"1258385\" >Capacitors and EMI suppression components</option><option
-        value=\"1258003\" >Capacitors and resistors for electronic equipment</option><option
-        value=\"997513\" >Car-Adaptations for Drivers and Passengers of Motor Vehicles</option><option
-        value=\"6194\" >Cartridge operated hand-held tools - Safety</option><option
-        value=\"6184\" >Cast iron pipes, fittings and their joints</option><option
-        value=\"6200\" >Cathodic protection</option><option value=\"6035\" >Cement
-        and building limes</option><option value=\"6041\" >Central heating boilers</option><option
-        value=\"6091\" >Central heating boilers using gaseous fuels</option><option
-        value=\"6294\" >Centrifuges </option><option value=\"6050\" >Ceramic tiles</option><option
-        value=\"400858\" >Cereal and cereal products</option><option value=\"6149\"
-        >Chains, ropes, webbing, slings and accessories - Safety</option><option value=\"6289\"
-        >Characterization and management of sludge</option><option value=\"3158075\"
-        >Characterization of a hybrid heat pump module</option><option value=\"6197\"
-        >Chemical disinfectants and antiseptics</option><option value=\"694302\" >Child
-        Protective Products</option><option value=\"6233\" >Child care articles</option><option
-        value=\"6147\" >Chimneys</option><option value=\"1257221\" >Circuit breakers
-        and similar devices for household and similar applications</option><option
-        value=\"3326686\" >Circular Economy</option><option value=\"3236015\" >Circularity
-        Protocols for extending the useful Life of Large Industrial Equipment</option><option
-        value=\"2847769\" >Circularity and recyclability of fishing gear and aquaculture
-        equipment.</option><option value=\"2944511\" >City Resilience Development
-        - Framework and guidance for implementation in historic areas</option><option
-        value=\"3039427\" >Civil works</option><option value=\"888433\" >Clean harbours
-        - Best practices</option><option value=\"6176\" >Cleaning equipment for air
-        and other gases</option><option value=\"6224\" >Cleanroom technology</option><option
-        value=\"2878377\" >Climate Change</option><option value=\"3236408\" >Closures
-        for optical distribution points - Outdoor - Aerial l</option><option value=\"734450\"
-        >Coated and uncoated flat products to be used for cold forming</option><option
-        value=\"622705\" >Coating systems for chemical apparatus and plants against
-        corrosion</option><option value=\"1258805\" >Coaxial cables</option><option
-        value=\"3059518\" >Collaborative emergency response - Common addressing format
-        and emergency identification protocol</option><option value=\"6028\" >Commercial
-        and Professional Refrigerating Appliances and Systems, Performance and Energy
-        Consumption</option><option value=\"3078518\" >Common modifications to EN
-        IEC 61439-1:2021 and EN IEC 61439-2:2021</option><option value=\"2978416\"
-        >Communication Technologies and Architectures</option><option value=\"1257241\"
-        >Communication cables</option><option value=\"6275\" >Communication systems
-        for meters</option><option value=\"1258773\" >Communication, signalling and
-        processing systems</option><option value=\"1258089\" >Components for low-voltage
-        surge protection</option><option value=\"6213\" >Compressors, vacuum pumps
-        and their systems</option><option value=\"6087\" >Concrete and related products</option><option
-        value=\"734439\" >Concrete reinforcing and prestressing steels</option><option
-        value=\"411453\" >Conservation of Cultural Heritage</option><option value=\"510793\"
-        >Construction Products - Assessment of release of dangerous substances</option><option
-        value=\"6133\" >Construction equipment and building material machines - Safety</option><option
+        Material</option><option value=\"3356655\" >CO2 capture, transportation, utilization,
+        storage and carbon accounting</option><option value=\"1957731\" >Cabin Air
+        Quality on civil aircraft - Chemical Agents</option><option value=\"1258293\"
+        >Cable management systems</option><option value=\"1258287\" >Cable networks
+        for television signals, sound signals and interactive services</option><option
+        value=\"628906\" >Candle fire safety</option><option value=\"1258385\" >Capacitors
+        and EMI suppression components</option><option value=\"1258003\" >Capacitors
+        and resistors for electronic equipment</option><option value=\"997513\" >Car-Adaptations
+        for Drivers and Passengers of Motor Vehicles</option><option value=\"6194\"
+        >Cartridge operated hand-held tools - Safety</option><option value=\"6184\"
+        >Cast iron pipes, fittings and their joints</option><option value=\"6200\"
+        >Cathodic protection</option><option value=\"6035\" >Cement and building limes</option><option
+        value=\"6041\" >Central heating boilers</option><option value=\"6091\" >Central
+        heating boilers using gaseous fuels</option><option value=\"6294\" >Centrifuges
+        </option><option value=\"6050\" >Ceramic tiles</option><option value=\"400858\"
+        >Cereal and cereal products</option><option value=\"6149\" >Chains, ropes,
+        webbing, slings and accessories - Safety</option><option value=\"6289\" >Characterization
+        and management of sludge</option><option value=\"3158075\" >Characterization
+        of a hybrid heat pump module</option><option value=\"6197\" >Chemical disinfectants
+        and antiseptics</option><option value=\"694302\" >Child Protective Products</option><option
+        value=\"6233\" >Child care articles</option><option value=\"6147\" >Chimneys</option><option
+        value=\"1257221\" >Circuit breakers and similar devices for household and
+        similar applications</option><option value=\"3326686\" >Circular Economy</option><option
+        value=\"3236015\" >Circularity Protocols for extending the useful Life of
+        Large Industrial Equipment</option><option value=\"2847769\" >Circularity
+        and recyclability of fishing gear and aquaculture equipment.</option><option
+        value=\"2944511\" >City Resilience Development - Framework and guidance for
+        implementation in historic areas</option><option value=\"3039427\" >Civil
+        works</option><option value=\"888433\" >Clean harbours - Best practices</option><option
+        value=\"6176\" >Cleaning equipment for air and other gases</option><option
+        value=\"6224\" >Cleanroom technology</option><option value=\"2878377\" >Climate
+        Change</option><option value=\"3236408\" >Closures for optical distribution
+        points - Outdoor - Aerial l</option><option value=\"734450\" >Coated and uncoated
+        flat products to be used for cold forming</option><option value=\"622705\"
+        >Coating systems for chemical apparatus and plants against corrosion</option><option
+        value=\"1258805\" >Coaxial cables</option><option value=\"3059518\" >Collaborative
+        emergency response - Common addressing format and emergency identification
+        protocol</option><option value=\"6028\" >Commercial and Professional Refrigerating
+        Appliances and Systems, Performance and Energy Consumption</option><option
+        value=\"3078518\" >Common modifications to EN IEC 61439-1:2021 and EN IEC
+        61439-2:2021</option><option value=\"2978416\" >Communication Technologies
+        and Architectures</option><option value=\"1257241\" >Communication cables</option><option
+        value=\"6275\" >Communication systems for meters</option><option value=\"1258773\"
+        >Communication, signalling and processing systems</option><option value=\"1258089\"
+        >Components for low-voltage surge protection</option><option value=\"6213\"
+        >Compressors, vacuum pumps and their systems</option><option value=\"6087\"
+        >Concrete and related products</option><option value=\"734439\" >Concrete
+        reinforcing and prestressing steels</option><option value=\"411453\" >Conservation
+        of Cultural Heritage</option><option value=\"510793\" >Construction Products
+        - Assessment of release of dangerous substances</option><option value=\"6133\"
+        >Construction equipment and building material machines - Safety</option><option
         value=\"6130\" >Continuous handling equipment and systems - Safety</option><option
         value=\"6169\" >Conveyor belts</option><option value=\"6115\" >Copper and
         copper alloys</option><option value=\"679535\" >Cosmetics</option><option
@@ -6325,7 +6325,7 @@ http_interactions:
         end form-thread-bot -->\r\n                                </div>\r\n                            </div>\r\n
         \                           <!-- end sformsub1 -->\r\n\r\n\r\n<input type=\"hidden\"
         name=\"p_md5_checksum\" value=\"\"  /><input type=\"hidden\" name=\"p_page_checksum\"
-        value=\"EB46A9EB6932E66A0AAF889959B30307\"  /></form>\r\n\r\n\r\n\r\n                        <div
+        value=\"37D2398BBC86037248D32FFA263C8FCE\"  /></form>\r\n\r\n\r\n\r\n                        <div
         id=\"sformsub2\">\r\n                            <div class=\"dash-top\">\r\n
         \                               <div class=\"dash-subnav\"></div>\r\n                            </div>\r\n
         \                           <div id=\"sdashsub1\">\r\n                                <div
@@ -6702,7 +6702,7 @@ http_interactions:
         = response['redirectUrl'];\r\n                                }\r\n                            }\r\n
         \   </script>\r\n<!-- #EndEditable --> \r\n\r\n</HTML><script type=\"text/javascript\">\r\n<!--
         \r\n\r\n//-->\r\n</script></HTML>"
-  recorded_at: Sun, 29 Oct 2023 02:26:04 GMT
+  recorded_at: Thu, 23 Nov 2023 05:35:17 GMT
 - request:
     method: get
     uri: https://standards.cencenelec.eu/dyn/www/f?cs=12B5BC59E556C5548E77B89430F0933F7&p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:35546,6260
@@ -6715,16 +6715,14 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML,
-        like Gecko) Version/9.0.2 Safari/601.3.9
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3_1) AppleWebKit/605.1.15 (KHTML,
+        like Gecko) Version/16.4 Safari/605.1.15
       Accept-Charset:
       - ISO-8859-1,utf-8;q=0.7,*;q=0.7
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=890501090197201; WWV_CUSTOM-F_1752901311939974_205=7539A50C85B1E6491B1B42103B61D072
-      Host:
-      - standards.cencenelec.eu
+      - PUBLIC_WWV_CUSTOM-F_1752901311939974_205=1628357366610401; WWV_CUSTOM-F_1752901311939974_205=2D9D8D566934E39C1DDD8EBE57F125A8
       Referer:
       - 'https://standards.cencenelec.eu/dyn/www/f?p=205:105:0:::::'
       Connection:
@@ -6737,13 +6735,13 @@ http_interactions:
       message: OK
     headers:
       Keep-Alive:
-      - timeout=15, max=81
+      - timeout=15, max=74
       Content-Type:
       - text/html; charset=UTF-8
       Server:
       - '0'
       X-Db-Content-Length:
-      - '51045'
+      - '51046'
       X-Powered-By:
       - '0'
       X-Frame-Options:
@@ -6753,9 +6751,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Date:
-      - Sun, 29 Oct 2023 02:26:04 GMT
+      - Thu, 23 Nov 2023 05:35:17 GMT
       Content-Length:
-      - '51045'
+      - '51046'
     body:
       encoding: UTF-8
       string: "\n<html>\r\n<!-- <head>\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;
@@ -7311,11 +7309,11 @@ http_interactions:
         name=\"wwv_flow\" id=\"wwvFlowForm\">\n<input type=\"hidden\" name=\"p_flow_id\"
         value=\"205\" id=\"pFlowId\" /><input type=\"hidden\" name=\"p_flow_step_id\"
         value=\"110\" id=\"pFlowStepId\" /><input type=\"hidden\" name=\"p_instance\"
-        value=\"890501090197201\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
-        value=\"429742255882801\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
+        value=\"1628357366610401\" id=\"pInstance\" /><input type=\"hidden\" name=\"p_page_submission_id\"
+        value=\"548753756905001\" id=\"pPageSubmissionId\" /><input type=\"hidden\"
         name=\"p_request\" value=\"\" id=\"pRequest\" />\r\n\r\n<input type=\"hidden\"
         name=\"p_md5_checksum\" value=\"\"  /><input type=\"hidden\" name=\"p_page_checksum\"
-        value=\"A1F613B052815157E57D84B91C042554\"  /></form>\r\n\r\n\r\n</HTML><script
+        value=\"B9D6FB39FC5D42DEC3D45737710782AB\"  /></form>\r\n\r\n\r\n</HTML><script
         type=\"text/javascript\">\napex.da.initDaEventList = function(){\napex.da.gEventList
         = [\n{\"triggeringElement\":\".crossrefpopup\",\"triggeringElementType\":\"JQUERY_SELECTOR\",\"bindType\":\"bind\",\"bindEventType\":\"click\",actionList:[{\"eventResult\":true,\"executeOnPageInit\":false,\"stopExecutionOnError\":true,javascriptFunction:function(){\r\n
         \  if (this.browserEvent !== 'load'){\r\n      apex.jQuery(document).apex_modal_page('openPageFromApexThis',
@@ -7332,5 +7330,5 @@ http_interactions:
         \  \"transition\":\"fade\",\r\n   \"draggable\":true,\r\n   \"initialHeight\":200,\r\n
         \  \"initialWidth\":300,\r\n   \"overlayOpacity\":.2,\r\n   \"scrolling\":true,\r\n
         \  \"loadingImageSrc\":\"\"\r\n});})();\n(function(){apex.da.initDaEventList();})();\n(function(){apex.da.init();})();\n});\r\n//-->\r\n</script></HTML>"
-  recorded_at: Sun, 29 Oct 2023 02:26:04 GMT
+  recorded_at: Thu, 23 Nov 2023 05:35:18 GMT
 recorded_with: VCR 6.2.0
