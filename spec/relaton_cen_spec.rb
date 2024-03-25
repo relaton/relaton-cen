@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 RSpec.describe RelatonCen do
-  before { RelatonCen.instance_variable_set :@configuration, nil }
-
   it "has a version number" do
     expect(RelatonCen::VERSION).not_to be nil
   end
@@ -39,7 +37,7 @@ RSpec.describe RelatonCen do
     expect do
       bib = RelatonCen::CenBibliography.get "EN 13306"
       expect(bib.docidentifier[0].id).to eq "EN 13306"
-    end.to output(/Found: `EN 13306`/).to_stderr
+    end.to output(/Found: `EN 13306`/).to_stderr_from_any_process
   end
 
   it "get ENV", vcr: "env_1993_1_1" do
@@ -66,7 +64,7 @@ RSpec.describe RelatonCen do
     expect do
       bib = RelatonCen::CenBibliography.get "EN 13306", nil, keep_year: true
       expect(bib.docidentifier[0].id).to eq "EN 13306:2017"
-    end.to output(/Found: `EN 13306:2017`/).to_stderr
+    end.to output(/Found: `EN 13306:2017`/).to_stderr_from_any_process
   end
 
   it "get amendment" do
@@ -84,8 +82,6 @@ RSpec.describe RelatonCen do
   end
 
   context "get document by year" do
-    before { RelatonCen.instance_variable_set :@configuration, nil }
-
     it "in code" do
       VCR.use_cassette "cen_iso_ts_21003_7" do
         bib = RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7:2019"
@@ -97,7 +93,7 @@ RSpec.describe RelatonCen do
       expect do
         bib = RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7", "2019"
         expect(bib.docidentifier[0].id).to eq "CEN ISO/TS 21003-7:2019"
-      end.to output(/\(CEN ISO\/TS 21003-7:2019\) Found: `CEN ISO\/TS 21003-7:2019`/).to_stderr
+      end.to output(/\(CEN ISO\/TS 21003-7:2019\) Found: `CEN ISO\/TS 21003-7:2019`/).to_stderr_from_any_process
     end
 
     it "return nil when year is incorrect" do
@@ -105,7 +101,7 @@ RSpec.describe RelatonCen do
         bib = ""
         expect do
           bib = RelatonCen::CenBibliography.get "CEN ISO/TS 21003-7", "2018"
-        end.to output(/There was no match for `2018`/).to_stderr
+        end.to output(/There was no match for `2018`/).to_stderr_from_any_process
         expect(bib).to be_nil
       end
     end
@@ -127,7 +123,7 @@ RSpec.describe RelatonCen do
       bib = ""
       expect do
         bib = RelatonCen::CenBibliography.get "CEN NOT FOUND"
-      end.to output(/\[relaton-cen\] \(CEN NOT FOUND\) No found\./).to_stderr
+      end.to output(/\[relaton-cen\] INFO: \(CEN NOT FOUND\) No found\./).to_stderr_from_any_process
       expect(bib).to be_nil
     end
   end
