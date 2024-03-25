@@ -1,9 +1,6 @@
 module RelatonCen
   module Util
     extend RelatonBib::Util
-
-    def self.logger
-      RelatonCen.configuration.logger
-    end
+    PROGNAME = "relaton-cen".freeze
   end
 end
