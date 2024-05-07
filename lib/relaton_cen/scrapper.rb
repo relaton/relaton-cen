@@ -54,7 +54,7 @@ module RelatonCen
       # @return [Array<Hash>]
       def fetch_abstract(doc)
         content = doc.at("//tr[th[.='Abstract/Scope']]/td")
-        [{ content: content.text, language: "en", script: "Latn" }]
+        [RelatonBib::Abstract.new(content: content.text, language: "en", script: "Latn")]
       end
 
       # Fetch docid.
@@ -121,8 +121,7 @@ module RelatonCen
                  else t.downcase
                  end
           rt.xpath("td/a").each do |r|
-            fref = RelatonBib::FormattedRef.new(content: r.text, language: "en",
-                                                script: "Latn")
+            fref = RelatonBib::FormattedRef.new(r.text)
             link = fetch_link HitCollection::DOMAIN + r[:href]
             bibitem = RelatonBib::BibliographicItem.new(
               formattedref: fref, type: "standard", link: link,
@@ -137,7 +136,7 @@ module RelatonCen
       # @return [RelatonBib::TypedTitleStringCollection]
       def fetch_titles(doc)
         te = doc.at("//tr[th[.='Title']]/td").text.strip
-        RelatonBib::TypedTitleString.from_string te, "en", "Latn"
+        RelatonBib::TypedTitleString.from_string te, lang: "en", script: "Latn"
       end
 
       # Fetch dates
@@ -183,7 +182,7 @@ module RelatonCen
       # @return [Array<Hash>]
       def fetch_copyright(doc)
         date = doc.at("//tr[th[.='date of Availability (DAV)']]/td").text
-        owner = owner_entity
+        owner = RelatonBib::Organization.new(**owner_entity)
         from = date.match(/^\d{4}/).to_s
         [{ owner: [owner], from: from }]
       end
