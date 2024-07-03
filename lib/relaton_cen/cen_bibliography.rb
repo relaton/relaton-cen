@@ -51,7 +51,7 @@ module RelatonCen
         # Util.warn "WARNING: No match found online for `#{id}`. " \
         #           "The code must be exactly like it is on the standards website."
         unless missed_years.empty?
-          Util.warn "There was no match for `#{year}`, though there " \
+          Util.info "There was no match for `#{year}`, though there " \
                     "were matches found for `#{missed_years.join('`, `')}`."
         end
         # if /\d-\d/.match? code
@@ -102,15 +102,15 @@ module RelatonCen
 
       def bib_get(code, year, opts) # rubocop:disable Metrics/AbcSize,Metrics/CyclomaticComplexity,Metrics/PerceivedComplexity,Metrics/MethodLength
         ref = year.nil? || code.match?(/:\d{4}/) ? code : "#{code}:#{year}"
-        Util.warn "(#{ref}) Fetching from standards.cencenelec.eu ..."
+        Util.info "Fetching from standards.cencenelec.eu ...", key: ref
         result = search_filter(code) || return
         ret = isobib_results_filter(result, year)
         if ret[:ret]
           bib = year || opts[:keep_year] ? ret[:ret] : ret[:ret].to_most_recent_reference
-          Util.warn "(#{ref}) Found: `#{bib.docidentifier.first&.id}`"
+          Util.info "Found: `#{bib.docidentifier.first&.id}`", key: ref
           bib
         else
-          Util.warn "(#{ref}) No found."
+          Util.info "No found.", key: ref
           fetch_ref_err(code, year, ret[:years])
         end
       end
