@@ -78,22 +78,23 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype:
-      type: international-standard
-    editorialgroup:
-      technical_committee:
-      - name: Plastics piping systems and ducting systems
-        type: TC
-        number: 155
-    ics:
-    - code: 23.040.20
-      text: Plastics pipes
-    - code: 91.140.60
-      text: Water supply systems
-    structuredidentifier:
-      project_number: '21003'
-      part: '7'
-      type: CEN
+    ext:
+      doctype:
+        type: international-standard
+      editorialgroup:
+        technical_committee:
+        - name: Plastics piping systems and ducting systems
+          type: TC
+          number: 155
+      ics:
+      - code: 23.040.20
+        text: Plastics pipes
+      - code: 91.140.60
+        text: Water supply systems
+      structuredidentifier:
+        project_number: '21003'
+        part: '7'
+        type: CEN
 - type: obsoletes
   bibitem:
     id: CENISO/TS21003-7-2008
@@ -108,22 +109,23 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype:
-      type: international-standard
-    editorialgroup:
-      technical_committee:
-      - name: Plastics piping systems and ducting systems
-        type: TC
-        number: 155
-    ics:
-    - code: 23.040.20
-      text: Plastics pipes
-    - code: 91.140.60
-      text: Water supply systems
-    structuredidentifier:
-      project_number: '21003'
-      part: '7'
-      type: CEN
+    ext:
+      doctype:
+        type: international-standard
+      editorialgroup:
+        technical_committee:
+        - name: Plastics piping systems and ducting systems
+          type: TC
+          number: 155
+      ics:
+      - code: 23.040.20
+        text: Plastics pipes
+      - code: 91.140.60
+        text: Water supply systems
+      structuredidentifier:
+        project_number: '21003'
+        part: '7'
+        type: CEN
 - type: cites
   bibitem:
     id: ISO17456
@@ -138,22 +140,23 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype:
-      type: international-standard
-    editorialgroup:
-      technical_committee:
-      - name: Plastics piping systems and ducting systems
-        type: TC
-        number: 155
-    ics:
-    - code: 23.040.20
-      text: Plastics pipes
-    - code: 91.140.60
-      text: Water supply systems
-    structuredidentifier:
-      project_number: '21003'
-      part: '7'
-      type: CEN
+    ext:
+      doctype:
+        type: international-standard
+      editorialgroup:
+        technical_committee:
+        - name: Plastics piping systems and ducting systems
+          type: TC
+          number: 155
+      ics:
+      - code: 23.040.20
+        text: Plastics pipes
+      - code: 91.140.60
+        text: Water supply systems
+      structuredidentifier:
+        project_number: '21003'
+        part: '7'
+        type: CEN
 - type: cites
   bibitem:
     id: ISO21003-1
@@ -168,22 +171,23 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype:
-      type: international-standard
-    editorialgroup:
-      technical_committee:
-      - name: Plastics piping systems and ducting systems
-        type: TC
-        number: 155
-    ics:
-    - code: 23.040.20
-      text: Plastics pipes
-    - code: 91.140.60
-      text: Water supply systems
-    structuredidentifier:
-      project_number: '21003'
-      part: '7'
-      type: CEN
+    ext:
+      doctype:
+        type: international-standard
+      editorialgroup:
+        technical_committee:
+        - name: Plastics piping systems and ducting systems
+          type: TC
+          number: 155
+      ics:
+      - code: 23.040.20
+        text: Plastics pipes
+      - code: 91.140.60
+        text: Water supply systems
+      structuredidentifier:
+        project_number: '21003'
+        part: '7'
+        type: CEN
 - type: cites
   bibitem:
     id: ISO21003-2
@@ -198,22 +202,23 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype:
-      type: international-standard
-    editorialgroup:
-      technical_committee:
-      - name: Plastics piping systems and ducting systems
-        type: TC
-        number: 155
-    ics:
-    - code: 23.040.20
-      text: Plastics pipes
-    - code: 91.140.60
-      text: Water supply systems
-    structuredidentifier:
-      project_number: '21003'
-      part: '7'
-      type: CEN
+    ext:
+      doctype:
+        type: international-standard
+      editorialgroup:
+        technical_committee:
+        - name: Plastics piping systems and ducting systems
+          type: TC
+          number: 155
+      ics:
+      - code: 23.040.20
+        text: Plastics pipes
+      - code: 91.140.60
+        text: Water supply systems
+      structuredidentifier:
+        project_number: '21003'
+        part: '7'
+        type: CEN
 - type: cites
   bibitem:
     id: ISO21003-3
@@ -228,22 +233,23 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype:
-      type: international-standard
-    editorialgroup:
-      technical_committee:
-      - name: Plastics piping systems and ducting systems
-        type: TC
-        number: 155
-    ics:
-    - code: 23.040.20
-      text: Plastics pipes
-    - code: 91.140.60
-      text: Water supply systems
-    structuredidentifier:
-      project_number: '21003'
-      part: '7'
-      type: CEN
+    ext:
+      doctype:
+        type: international-standard
+      editorialgroup:
+        technical_committee:
+        - name: Plastics piping systems and ducting systems
+          type: TC
+          number: 155
+      ics:
+      - code: 23.040.20
+        text: Plastics pipes
+      - code: 91.140.60
+        text: Water supply systems
+      structuredidentifier:
+        project_number: '21003'
+        part: '7'
+        type: CEN
 - type: cites
   bibitem:
     id: ISO21003-5
@@ -258,40 +264,41 @@ relation:
       script:
       - Latn
       format: text/plain
-    doctype:
-      type: international-standard
-    editorialgroup:
-      technical_committee:
-      - name: Plastics piping systems and ducting systems
-        type: TC
-        number: 155
-    ics:
-    - code: 23.040.20
-      text: Plastics pipes
-    - code: 91.140.60
-      text: Water supply systems
-    structuredidentifier:
-      project_number: '21003'
-      part: '7'
-      type: CEN
+    ext:
+      doctype:
+        type: international-standard
+      editorialgroup:
+        technical_committee:
+        - name: Plastics piping systems and ducting systems
+          type: TC
+          number: 155
+      ics:
+      - code: 23.040.20
+        text: Plastics pipes
+      - code: 91.140.60
+        text: Water supply systems
+      structuredidentifier:
+        project_number: '21003'
+        part: '7'
+        type: CEN
 place:
 - London
 fetched: '2021-05-21'
-doctype:
-  type: international-standard
-editorialgroup:
-  technical_committee:
-  - name: Plastics piping systems and ducting systems
-    type: TC
-    number: 155
-ics:
-- code: 23.040.20
-  text: Plastics pipes
-- code: 91.140.60
-  text: Water supply systems
-structuredidentifier:
-  project_number: '21003'
-  part: '7'
-  type: CEN
 ext:
   schema-version: v1.0.1
+  doctype:
+    type: international-standard
+  editorialgroup:
+    technical_committee:
+    - name: Plastics piping systems and ducting systems
+      type: TC
+      number: 155
+  ics:
+  - code: 23.040.20
+    text: Plastics pipes
+  - code: 91.140.60
+    text: Water supply systems
+  structuredidentifier:
+    project_number: '21003'
+    part: '7'
+    type: CEN
