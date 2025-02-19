@@ -6,7 +6,7 @@ require "jing"
 
 Dir["./spec/support/**/*.rb"].sort.each { |f| require f }
 
-require "relaton_cen"
+require "relaton/cen"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative "lib/relaton_cen/version"
+require_relative "lib/relaton/cen/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "relaton-cen"
-  spec.version       = RelatonCen::VERSION
+  spec.version       = Relaton::Cen::VERSION
   spec.authors       = ["Ribose Inc."]
   spec.email         = ["open.source@ribose.com"]
 
-  spec.summary       = "RelatonCen: retrieve Cenelec Standards for " \
+  spec.summary       = "Relaton::Cen: retrieve Cenelec Standards for " \
                        "bibliographic use using the IsoBibliographicItem model"
-  spec.description   = "RelatonCen: retrieve Cenelec Standards for " \
+  spec.description   = "Relaton::Cen: retrieve Cenelec Standards for " \
                        "bibliographic use using the IsoBibliographicItem model"
   spec.homepage      = "https://github.com/metanorma/relaton-cen"
   spec.license       = "BSD-2-Clause"
@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "mechanize", "~> 2.10"
-  spec.add_dependency "relaton-iso-bib", "~> 1.19.0"
+  spec.add_dependency "relaton-iso", "~> 2.0.0-alpha.1"
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
