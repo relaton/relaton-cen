@@ -110,26 +110,31 @@ module RelatonCen
       # Fetch relations.
       # @param doc [Mechanize::Page]
       # @return [Array<Hash>]
-      def fetch_relations(doc) # rubocop:disable Metrics/MethodLength,Metrics/AbcSize
+      def fetch_relations(doc)
         doc.xpath(
           "//div[@id='DASHBOARD_LISTRELATIONS']/table/tr[th[.!='Sales Points']]",
         ).each_with_object([]) do |rt, a|
-          t = rt.at("th").text
-          type = case t
-                 when "Supersedes" then "obsoletes"
-                 when /Normative reference/ then "cites"
-                 else t.downcase
-                 end
+          type = relation_type rt.at("th").text.downcase
           rt.xpath("td/a").each do |r|
-            fref = RelatonBib::FormattedRef.new(content: r.text, language: "en",
-                                                script: "Latn")
-            link = fetch_link HitCollection::DOMAIN + r[:href]
-            bibitem = RelatonBib::BibliographicItem.new(
-              formattedref: fref, type: "standard", link: link,
-            )
-            a << { type: type, bibitem: bibitem }
+            a << { type: type, bibitem: create_relation(r) }
           end
         end
+      end
+
+      def relation_type(type)
+        case type
+        when "supersedes" then "obsoletes"
+        when "superseded by" then "obsoletedBy"
+        when /bibliographic references/ then "cites"
+        when /normative reference/ then "cites"
+        else type
+        end
+      end
+
+      def create_relation(rel)
+        fref = RelatonBib::FormattedRef.new(content: rel.text, language: "en", script: "Latn")
+        link = fetch_link HitCollection::DOMAIN + rel[:href]
+        BibliographicItem.new(formattedref: fref, type: "standard", link: link)
       end
 
       # Fetch titles.
