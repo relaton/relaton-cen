@@ -3,7 +3,7 @@
 module RelatonCen
   # Page of hit collection.
   class HitCollection < RelatonBib::HitCollection
-    DOMAIN = "https://standards.cencenelec.eu/dyn/www/"
+    DOMAIN = "https://standards.cencenelec.eu"
 
     # @return [Mechanize]
     attr_reader :agent
@@ -19,28 +19,35 @@ module RelatonCen
         return
       end
 
-      search_page = agent.get "#{DOMAIN}f?p=205:105:0:::::"
-      form = search_page.at "//form[@id='wwvFlowForm']"
-      skip_inputs = %w[f11 essentialCookies]
-      req_body = form.xpath(".//input").filter_map do |f|
-        next if f[:name].empty? || skip_inputs.include?(f[:name])
+      redirect_page = agent.get DOMAIN
+      redirect_url = redirect_page.body.slice(/(?<=follow the <a href=')#{DOMAIN}[^']+/)
+      search_page = agent.get redirect_url
+      form = search_page.form_with(id: "wwvFlowForm")
+      ref_field = form.field_with(id: "STAND_REF")
+      ref_field.value = ref
+      resp = agent.submit form
 
-        val = case f[:value]
-              when "LANGUAGE_LIST" then 0
-              when "STAND_REF" then CGI.escape(ref)
-              else
-                case f[:name]
-                when "p_request" then "S1-S2-S3-S4-S5-S6-S7-CEN-CLC-"
-                when "f10" then ""
-                else f[:value]
-                end
-              end
-        if f[:name] == "f10" then "f10=#{f[:value]}&f11=#{val}"
-        else
-          "#{f[:name]}=#{val}"
-        end
-      end.join("&")
-      resp = agent.post form[:action], req_body
+      # form = search_page.at "//form[@id='wwvFlowForm']"
+      # skip_inputs = %w[f11 essentialCookies]
+      # req_body = form.xpath(".//input").filter_map do |f|
+      #   next if f[:name].empty? || skip_inputs.include?(f[:name])
+
+      #   val = case f[:value]
+      #         when "LANGUAGE_LIST" then 0
+      #         when "STAND_REF" then CGI.escape(ref)
+      #         else
+      #           case f[:name]
+      #           when "p_request" then "S1-S2-S3-S4-S5-S6-S7-CEN-CLC-"
+      #           when "f10" then ""
+      #           else f[:value]
+      #           end
+      #         end
+      #   if f[:name] == "f10" then "f10=#{f[:value]}&f11=#{val}"
+      #   else
+      #     "#{f[:name]}=#{val}"
+      #   end
+      # end.join("&")
+      # resp = agent.post form[:action], req_body
       @array = hits resp
       sort
     end

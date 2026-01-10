@@ -9,7 +9,7 @@ module RelatonCen
       def search(text, year = nil)
         # /^C?EN\s(?<code>.+)/ =~ text
         HitCollection.new text, year
-      rescue Mechanize::ResponseCodeError => e
+      rescue Mechanize::ResponseCodeError, Net::ReadTimeout => e
         raise RelatonBib::RequestError, e.message
       end
 
@@ -110,7 +110,7 @@ module RelatonCen
           Util.info "Found: `#{bib.docidentifier.first&.id}`", key: ref
           bib
         else
-          Util.info "No found.", key: ref
+          Util.info "Not found.", key: ref
           fetch_ref_err(code, year, ret[:years])
         end
       end
