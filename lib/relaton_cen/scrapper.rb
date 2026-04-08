@@ -32,7 +32,7 @@ module RelatonCen
           copyright: fetch_copyright(doc),
           link: fetch_link(doc.uri.to_s),
           relation: fetch_relations(doc),
-          place: ["London"],
+          place: [RelatonBib::Place.new(city: "London")],
         )
       end
 
