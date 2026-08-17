@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
                        "bibliographic use using the IsoBibliographicItem model"
   spec.description   = "RelatonCen: retrieve Cenelec Standards for " \
                        "bibliographic use using the IsoBibliographicItem model"
-  spec.homepage      = "https://github.com/metanorma/relaton-cen"
+  spec.homepage      = "https://github.com/relaton/relaton-cen"
   spec.license       = "BSD-2-Clause"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
